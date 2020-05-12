@@ -29,11 +29,20 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          maxWidth: 1440,
+          padding: `0 32px 64px`,
         }}
       >
-        <main>{children}</main>
+        <main
+          style={{
+            fontFamily: `Montserrat`,
+            fontWeight: 500,
+            color: "var(--gray)",
+            letterSpacing: "0.02em",
+          }}
+        >
+          {children}
+        </main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
