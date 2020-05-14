@@ -15,6 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/*
 article,
 aside,
 details,
@@ -626,4 +627,4 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-}
+} */

@@ -3,12 +3,13 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-import { Logo } from "./logo"
+import Logo from "../images/logo.svg"
+// import { Container, Row, Col } from "../components/grid"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <Wrapper>
-    <Link to="/">
-      <Logo height={58} />
+    <Link to="/" style={{ display: "flex" }}>
+      <Logo style={{ height: 48 }} />
     </Link>
     <Nav>
       <a>Our Work</a>
@@ -20,21 +21,19 @@ const Header = ({ siteTitle }) => (
 
 const Wrapper = styled.header`
   display: flex;
-  margin: 0 auto;
-  padding: 64px 32px;
-  max-width: 1440px;
+  flex: 1;
   justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
 `
 
 const Nav = styled.nav`
   display: flex;
   align-items: center;
-  color: var(--gray);
-  font-family: "Montserrat";
-  font-size: 22px;
+  font-size: 1.25rem;
 
   a {
-    margin-left: 96px;
+    margin-left: 4rem;
   }
 `
 
