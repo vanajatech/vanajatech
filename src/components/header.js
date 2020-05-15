@@ -4,19 +4,23 @@ import React from "react"
 import styled from "styled-components"
 
 import Logo from "../images/logo.svg"
+
+import { Row } from "./grid"
 // import { Container, Row, Col } from "../components/grid"
 
 const Header = () => (
-  <Wrapper>
-    <Link to="/" style={{ display: "flex" }}>
-      <Logo style={{ height: 48 }} />
-    </Link>
-    <Nav>
-      <a>Our Work</a>
-      <a>Careers</a>
-      <a>Contact Us</a>
-    </Nav>
-  </Wrapper>
+  <Row>
+    <Wrapper>
+      <Link to="/" style={{ display: "flex" }}>
+        <Logo style={{ height: 48 }} />
+      </Link>
+      <Nav>
+        <a>Our Work</a>
+        <a>Careers</a>
+        <a>Contact Us</a>
+      </Nav>
+    </Wrapper>
+  </Row>
 )
 
 const Wrapper = styled.header`

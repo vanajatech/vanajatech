@@ -5,28 +5,40 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Button } from "../components/button"
-import { Col } from "../components/grid"
+import { Row, Col } from "../components/grid"
+import { Card, CardHeader } from "../components/card"
+import { Input } from "../components/input"
 
 import Illustration from "../images/illustration.svg"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Col>
-      <H1>
-        Ideas are cheap;
-        <br />
-        execution is everything.
-      </H1>
-      <H2>
-        That’s where <Red>we</Red> come in.
-      </H2>
-      <H3>Our expertise in world-class applications ensures your success.</H3>
-      <Button>Contact Us</Button>
-    </Col>
-    <Col>
-      <Illustration style={{ overflow: "visible" }} />
-    </Col>
+    <Row>
+      <Col>
+        <H1>
+          Ideas are cheap;
+          <br />
+          execution is everything.
+        </H1>
+        <H2>
+          That’s where <Red>we</Red> come in.
+        </H2>
+        <H3>Our expertise in world-class applications ensures your success.</H3>
+        <Button>Contact Us</Button>
+      </Col>
+      <Col>
+        <Illustration style={{ overflow: "visible" }} />
+      </Col>
+    </Row>
+    <Row>
+      <Col>
+        <Card align="center">
+          <CardHeader>Join Our Mailing List</CardHeader>
+          <Input type="text" placeholder="jack@mail.com" />
+        </Card>
+      </Col>
+    </Row>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 )

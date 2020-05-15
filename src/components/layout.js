@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
-import { Container, Row } from "./grid"
+import { Container } from "./grid"
 import Header from "./header"
 import "./layout.css"
 
@@ -28,10 +28,8 @@ const Layout = ({ children }) => {
   return (
     <Body>
       <Container>
-        <Row>
-          <Header siteTitle={data.site.siteMetadata.title} />
-        </Row>
-        <Row>{children}</Row>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        {children}
       </Container>
     </Body>
   )
@@ -40,8 +38,7 @@ const Layout = ({ children }) => {
 const Body = styled.div`
   font-family: "Montserrat";
   font-weight: 500;
-  color: var(--gray);
-  letter-spacing: 0.02em;
+  color: var(--gray-500);
 `
 
 Layout.propTypes = {
