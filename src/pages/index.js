@@ -9,7 +9,7 @@ import { Row, Col } from "../components/grid"
 import { Card, CardHeader } from "../components/card"
 import { Input } from "../components/input"
 
-import Illustration from "../images/illustration.svg"
+import Image from "../components/image"
 
 const IndexPage = () => (
   <Layout>
@@ -28,7 +28,10 @@ const IndexPage = () => (
         <Button>Contact Us</Button>
       </Col>
       <Col>
-        <Illustration style={{ overflow: "visible" }} />
+        <Image
+          alt="Gatsby in Space"
+          filename="windows-2EwyKv4-03k-unsplash.jpg"
+        />
       </Col>
     </Row>
     <Row>
