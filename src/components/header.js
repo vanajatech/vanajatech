@@ -10,36 +10,23 @@ import { Row } from "./grid"
 
 const Header = () => (
   <Row>
-    <Wrapper>
-      <Link to="/" style={{ display: "flex" }}>
-        <Logo style={{ height: 48 }} />
+    <div className="flex flex-1 justify-between px-4">
+      <Link to="/" className="flex">
+        <Logo className="h-12" />
       </Link>
-      <Nav>
-        <a>Our Work</a>
-        <a>Careers</a>
-        <a>Contact Us</a>
-      </Nav>
-    </Wrapper>
+      <div className="flex items-center text-gray-500 font-normal text-base">
+        <a className="ml-12">Our Work</a>
+        <a className="ml-12">
+          Careers
+          <span className="bg-red text-white text-xs text-center font-bold leading-4 rounded-full d-block absolute w-4 h-4">
+            2
+          </span>
+        </a>
+        <a className="ml-12">Contact Us</a>
+      </div>
+    </div>
   </Row>
 )
-
-const Wrapper = styled.header`
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  padding-left: 1rem;
-  padding-right: 1rem;
-`
-
-const Nav = styled.nav`
-  display: flex;
-  align-items: center;
-  font-size: 1.25rem;
-
-  a {
-    margin-left: 4rem;
-  }
-`
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

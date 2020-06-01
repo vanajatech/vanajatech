@@ -1,10 +1,9 @@
 import React from "react"
 // import { Link } from "gatsby"
-import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Button } from "../components/button"
+import Button from "../components/button"
 import { Row, Col } from "../components/grid"
 import { Card, CardHeader } from "../components/card"
 import { Input } from "../components/input"
@@ -16,22 +15,37 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Row>
       <Col>
-        <H1>
+        <h1 className="text-gray-900 text-4xl font-light mb-8">
           Ideas are cheap;
           <br />
-          execution is everything.
-        </H1>
-        <H2>
-          That’s where <Red>we</Red> come in.
-        </H2>
-        <H3>Our expertise in world-class applications ensures your success.</H3>
-        <Button>Contact Us</Button>
+          <span className="font-bold">execution is everything.</span>
+          <br />
+          That’s where we at Vanaja Technologies come in.
+          <br />
+          <br />
+          Our expertise in world-class applications ensures your success.
+        </h1>
       </Col>
+    </Row>
+    <Row>
       <Col>
         <Image
-          alt="Gatsby in Space"
+          alt="Window a day keeps Matti away."
           filename="windows-2EwyKv4-03k-unsplash.jpg"
+          className="w-full h-full"
         />
+      </Col>
+      <Col className="flex flex-col items-center justify-center">
+        <h2 className="text-gray-900 text-5xl tracking-tighter font-bold mb-8">
+          We Do Software
+        </h2>
+        <p className="text-center mb-8">
+          Chambray plaid edison bulb, church-key occupy you probably haven't
+          heard of them snackwave pok pok. Vexillologist prism authentic
+          pour-over jean shorts. Pok pok artisan everyday carry food truck,
+          messenger bag hoodie offal bespoke four loko.
+        </p>
+        <Button>See More</Button>
       </Col>
     </Row>
     <Row>
@@ -45,24 +59,5 @@ const IndexPage = () => (
     {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 )
-
-const H1 = styled.h1`
-  font-size: 2rem;
-  margin-bottom: 2rem;
-`
-
-const H2 = styled.h2`
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-`
-
-const H3 = styled.h3`
-  font-size: 2rem;
-  margin-bottom: 2rem;
-`
-
-const Red = styled.span`
-  color: var(--primary);
-`
 
 export default IndexPage

@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
 
 import { Container } from "./grid"
 import Header from "./header"
@@ -26,20 +25,12 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <Body>
-      <Container>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        {children}
-      </Container>
-    </Body>
+    <Container>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      {children}
+    </Container>
   )
 }
-
-const Body = styled.div`
-  font-family: "Montserrat";
-  font-weight: 500;
-  color: var(--gray-500);
-`
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
