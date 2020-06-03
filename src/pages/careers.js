@@ -9,12 +9,12 @@ import { Row, Col } from "../components/grid"
 import { Card, CardHeader } from "../components/card"
 import { Input } from "../components/input"
 
-const OurWork = () => (
+const Careers = () => (
   <Layout>
-    <SEO title="Our Work" />
+    <SEO title="Join the Team" />
     <Row>
       <Col className="text-center">
-        <h1>Our Work</h1>
+        <h1>Join the Team</h1>
         <p>
           Chambray plaid edison bulb, church-key occupy you probably haven't
           heard of them snackwave pok pok. Vexillologist prism authentic
@@ -27,4 +27,4 @@ const OurWork = () => (
   </Layout>
 )
 
-export default OurWork
+export default Careers
