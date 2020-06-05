@@ -8,8 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Container from "@material-ui/core/Container"
 
-import { Container } from "./grid"
 import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <Container>
+    <Container maxWidth="lg">
       <Header siteTitle={data.site.siteMetadata.title} />
       {children}
       <Footer />
