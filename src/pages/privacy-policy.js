@@ -4,10 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import Button from "../components/button"
 import { Row, Col } from "../components/grid"
-import { Card, CardHeader } from "../components/card"
-import { Input } from "../components/input"
 
 const PrivacyPolicy = () => (
   <Layout>

@@ -1,8 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import Grid from "@material-ui/core/Grid"
-import Typography from "@material-ui/core/Typography"
 import Box from "@material-ui/core/Box"
 
 import Layout from "../components/layout"
