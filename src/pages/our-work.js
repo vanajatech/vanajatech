@@ -7,6 +7,9 @@ import Box from "@material-ui/core/Box"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Image from "../components/image"
+
+import TalenomLogo from "../images/talenom-logo.svg"
 
 const OurWork = () => (
   <Layout>
@@ -86,6 +89,22 @@ const OurWork = () => (
             </p>
           </Grid>
         </Grid>
+      </Grid>
+    </Grid>
+
+    <Grid container direction="column" justify="flex-start" alignItems="center">
+      <Grid item xs>
+        <Box textAlign="center" m="9rem 0 6rem">
+          <h2>Notable Customers</h2>
+          <Box display="flex" alignItems="center" mt="2rem" py="4rem">
+            <TalenomLogo height="48" style={{ paddingRight: "4rem" }} />
+            <Image
+              alt="Oscar Software logo."
+              filename="oscar-logo.png"
+              style={{ width: 210, height: 64 }}
+            />
+          </Box>
+        </Box>
       </Grid>
     </Grid>
   </Layout>
