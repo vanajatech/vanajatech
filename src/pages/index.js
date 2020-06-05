@@ -78,7 +78,7 @@ const IndexPage = () => (
     </Row>
     <Row>
       <Col>
-        <Card align="center">
+        <Card textAlign="center">
           <CardHeader>Join Our Mailing List</CardHeader>
           <Input type="text" placeholder="jack@mail.com" />
         </Card>
