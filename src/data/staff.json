@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Donald Ekeme Njumbe Ediage",
+    "email": "donald@vanajatech.com",
+    "github": "https://github.com/DonDT",
+    "instagram": "",
+    "linkedin": "https://www.linkedin.com/in/donald-njumbe-ediage-e-33468741/"
+  },
+  {
+    "name": "Hannu Kukko",
+    "email": "hannu.kukko@vanajatech.com",
+    "github": "https://github.com/hmkukko",
+    "instagram": "",
+    "linkedin": "https://www.linkedin.com/in/hannu-kukko-9381b586/"
+  },
+  {
+    "name": "Kyle Biggins",
+    "email": "kyle.biggins@vanajatech.com",
+    "github": "https://github.com/lightwrath",
+    "instagram": "",
+    "linkedin": "https://www.linkedin.com/in/kyle-biggins-9ab3221a1/"
+  },
+  {
+    "name": "Matias Puhakka",
+    "email": "matias.puhakka@vanajatech.com",
+    "imageUrl": "matias.jpg",
+    "github": "https://github.com/MatiasPuhakka",
+    "instagram": "",
+    "linkedin": "https://www.linkedin.com/in/matias-puhakka-17698b172/"
+  },
+  {
+    "name": "Matti Saarinen",
+    "email": "matti.saarinen@vanajatech.com",
+    "github": "https://github.com/mattipsaarinen",
+    "instagram": "",
+    "linkedin": "https://www.linkedin.com/in/matti-saarinen-4b756b2/"
+  },
+  {
+    "name": "Petrus Käkelä",
+    "email": "petrus.kakela@vanajatech.com",
+    "imageUrl": "petrus.jpg",
+    "github": "https://github.com/petruskakela",
+    "instagram": "",
+    "linkedin": "https://www.linkedin.com/in/petrus-k%C3%A4kel%C3%A4-a95715180/"
+  }
+]

@@ -5,17 +5,9 @@ import Box from "@material-ui/core/Box"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Image from "../components/image"
 import { Card } from "../components/card"
-import { Button } from "../components/button"
-import {
-  Letter,
-  Phone,
-  Pin,
-  Github,
-  Instagram,
-  Linkedin,
-} from "../components/icons"
+import StaffListing from "../components/staffListing"
+import { Letter, Phone, Pin } from "../components/icons"
 
 const ContactUs = () => (
   <Layout>
@@ -68,33 +60,7 @@ const ContactUs = () => (
           <h2>Our Team</h2>
         </Box>
       </Grid>
-      <Grid item lg={3} md={4} sm={6} xs={12}>
-        <Card textAlign="center" style={{ padding: "2rem 1rem" }}>
-          <Image
-            alt="Faceholder."
-            filename="face-1.png"
-            style={{
-              width: "100%",
-              height: "100%",
-              maxWidth: 140,
-              margin: "0 auto 1.5rem auto",
-            }}
-          />
-          <h4 style={{ marginBottom: "1.5rem" }}>Josh Samoilenko</h4>
-          <BoldLink>josh.samoilenko@vanajatech.com</BoldLink>
-          <SocialIcons>
-            <a href="https://github.com/vanajatech">
-              <Github />
-            </a>
-            <a href="https://www.instagram.com/vanajatech/">
-              <Instagram />
-            </a>
-            <a href="https://www.linkedin.com/company/vanaja-tech/">
-              <Linkedin />
-            </a>
-          </SocialIcons>
-        </Card>
-      </Grid>
+      <StaffListing />
     </Grid>
   </Layout>
 )
@@ -105,19 +71,6 @@ const BoldLink = styled.a`
   line-height: 16px;
   text-align: center;
   color: var(--primary);
-`
-
-const SocialIcons = styled.div`
-  margin-top: 1.5rem;
-  color: var(--gray-500);
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-
-  svg {
-    width: 1rem;
-    fill: var(--gray-500);
-  }
 `
 
 export default ContactUs
