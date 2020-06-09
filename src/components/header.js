@@ -49,14 +49,15 @@ const Container = styled(Grid)`
 const Notification = styled.span`
   background: var(--primary);
   color: #fff;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 99px;
   line-height: 1rem;
   position: absolute;
   width: 1rem;
   height: 1rem;
+  margin-left: 8px;
 `
 
 export default Header

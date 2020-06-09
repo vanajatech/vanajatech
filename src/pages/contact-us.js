@@ -6,6 +6,7 @@ import Box from "@material-ui/core/Box"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Card } from "../components/card"
+import PageHeader from "../components/pageHeader"
 import StaffListing from "../components/staffListing"
 import { Letter, Phone, Pin } from "../components/icons"
 import { BoldLink } from "../components/utilities"
@@ -13,15 +14,9 @@ import { BoldLink } from "../components/utilities"
 const ContactUs = () => (
   <Layout>
     <SEO title="Contact Us" />
-
-    <Grid container spacing={4}>
-      <Grid item xs>
-        <Box textAlign="center" m="7rem 0 4rem">
-          <h1 style={{ margin: 0 }}>Contact Us</h1>
-          <h4>We are always looking for new opporturnities.</h4>
-        </Box>
-      </Grid>
-    </Grid>
+    <PageHeader title="Contact Us">
+      <h4>We are always looking for new opporturnities.</h4>
+    </PageHeader>
 
     <Grid container spacing={4} justify="center">
       <Grid item lg={3} md={4} sm={6} xs={12}>

@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid"
 import Box from "@material-ui/core/Box"
 
 import Layout from "../components/layout"
+import PageHeader from "../components/pageHeader"
 import SEO from "../components/seo"
 import Image from "../components/image"
 
@@ -12,22 +13,13 @@ import TalenomLogo from "../images/talenom-logo.svg"
 const OurWork = () => (
   <Layout>
     <SEO title="Our Work" />
+    <PageHeader title="Our Work">
+      <h4>
+        We are a young company with a lot of combined skill and experience.
+      </h4>
+    </PageHeader>
 
-    <Grid container direction="column" justify="flex-start" alignItems="center">
-      <Grid item md={8} xs={12}>
-        <Box textAlign="center" m="9rem 0 6rem">
-          <h1>Our Work</h1>
-          <p>
-            Chambray plaid edison bulb, church-key occupy you probably haven't
-            heard of them snackwave pok pok. Vexillologist prism authentic
-            pour-over jean shorts. Pok pok artisan everyday carry food truck,
-            messenger bag hoodie offal bespoke four loko.
-          </p>
-        </Box>
-      </Grid>
-    </Grid>
-
-    <Grid container direction="column" justify="flex-start" alignItems="center">
+    <Grid container direction="column" alignItems="center" spacing={4}>
       <Grid item md={6} xs={12}>
         <Grid container wrap="nowrap" style={{ marginBottom: "4rem" }}>
           <Grid item>

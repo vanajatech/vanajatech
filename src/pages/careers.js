@@ -5,6 +5,7 @@ import Box from "@material-ui/core/Box"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import PageHeader from "../components/pageHeader"
 import Image from "../components/image"
 import { Card } from "../components/card"
 import { Button } from "../components/button"
@@ -12,18 +13,13 @@ import { Button } from "../components/button"
 const Careers = () => (
   <Layout>
     <SEO title="Join the Team" />
+    <PageHeader title="Join the Team">
+      <h4>
+        We are always looking for more members to join our Counter-Strike team.
+      </h4>
+    </PageHeader>
 
     <Grid container spacing={4}>
-      <Grid item xs={12}>
-        <Box textAlign="center" m="7rem 0 4rem">
-          <h1 style={{ margin: 0 }}>Join the Team</h1>
-          <h4>
-            We are always looking for more members to join our Counter-Strike
-            team.
-          </h4>
-        </Box>
-      </Grid>
-
       <Grid item xs={6} style={{ display: "flex", marginBottom: "7rem" }}>
         <Box
           display="flex"
@@ -31,13 +27,12 @@ const Careers = () => (
           flexDirection="column"
           pr="2rem"
         >
-          <p style={{ marginBottom: "3rem" }}>
+          <p>
             We’re an innovative and fast growing team of passionate fellows,
             based in Hämeenlinna. Personal and professional development of each
             and every member of the team is in the heart of Vanaja Tech.
           </p>
-          <h2>Work Meets Play</h2>
-          <p style={{ marginBottom: 0 }}>
+          <p>
             We want to make sure that everyone in our team feels at home. That’s
             why we take time to be together every week, be it having fun in
             Counter-Strike, sweating on the football field or hiking in the
