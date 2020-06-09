@@ -6,6 +6,7 @@ import Grid from "@material-ui/core/Grid"
 import Image from "./image"
 import { Card } from "./card"
 import { Github, Instagram, Linkedin } from "./icons"
+import { BoldLink } from "./utilities"
 
 const STAFF_QUERY = graphql`
   query StaffQuery {
@@ -64,39 +65,34 @@ const StaffListing = () => (
 const StaffCard = styled(Card)`
   text-align: center;
   padding: 2rem 1rem;
+  height: 100%;
 
   h4 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
   }
 `
 
 const Portrait = styled(Image)`
   border-radius: 9999px;
+  margin: 0 auto 1rem;
   width: 100%;
   height: 100%;
   max-width: 140px;
   max-height: 140px;
-  margin: 0 auto 1.5rem;
-`
-
-const BoldLink = styled.a`
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 16px;
-  text-align: center;
-  color: var(--primary);
 `
 
 const SocialIcons = styled.div`
   margin-top: 1.5rem;
   color: var(--gray-500);
   display: flex;
-  gap: 20px;
   justify-content: center;
 
   svg {
-    width: 1rem;
-    fill: var(--gray-500);
+    fill: var(--gray-900);
+    margin: 0 1rem;
+    height: 1.25rem;
+    width: 1.25rem;
   }
 `
 

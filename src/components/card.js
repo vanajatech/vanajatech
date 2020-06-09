@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 export const Card = styled.div`
-  padding: 1rem 2rem;
-  background: #ffffff;
+  padding: 2rem 3rem;
+  background: #fff;
   box-shadow: 10px 12px 25px rgba(0, 0, 0, 0.05);
   border-radius: 1rem;
   text-align: ${props => props.textAlign};

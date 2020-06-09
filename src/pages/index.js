@@ -54,7 +54,7 @@ const IndexPage = () => (
           className="w-full h-full"
           style={{ maxHeight: 720 }}
         />
-        <div className="absolute bg-gray-900 bg-opacity-50 text-white text-center inset-0 w-full h-full flex flex-col items-center justify-center px-12">
+        <div className="absolute bg-gray-900 bg-opacity-50 text-white text-center inset-0 w-full h-full flex flex-col items-center justify-center px-32">
           <div>
             <h2 className="mb-8">Join the Team</h2>
             <p className="text-white text-2xl leading-7 mb-8">

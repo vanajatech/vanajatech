@@ -112,7 +112,7 @@ const BigNumber = styled.div`
   display: inline;
   text-align: right;
   vertical-align: top;
-  color: rgba(180, 10, 10, 0.6);
+  color: var(--primary);
   font-family: "IBM Plex Mono";
   font-weight: bold;
   font-size: 144px;

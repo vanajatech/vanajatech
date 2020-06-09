@@ -8,7 +8,7 @@ import Grid from "@material-ui/core/Grid"
 import { Github, Instagram, Linkedin } from "./icons"
 
 const Footer = () => (
-  <Grid container direction="row" justify="center" alignItems="center">
+  <Grid container style={{ marginTop: "6rem" }}>
     <Grid item xs>
       <SocialIcons>
         <a href="https://github.com/vanajatech">
@@ -36,24 +36,27 @@ const Footer = () => (
 const SocialIcons = styled.div`
   color: var(--gray-900);
   display: flex;
-  gap: 3rem;
   justify-content: center;
-  padding-top: 3rem;
+  margin-top: 4rem;
+
+  svg {
+    margin: 0 3rem;
+  }
 `
 
 const Links = styled.div`
-  color: var(--gray-500);
+  color: var(--gray-900);
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 `
 
 const Copyright = styled.p`
-  color: var(--gray-500);
+  color: var(--gray-900);
   font-size: 0.875rem;
   display: flex;
   justify-content: center;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 `
 
 export default Footer
