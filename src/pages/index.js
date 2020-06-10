@@ -93,7 +93,7 @@ const IndexPage = () => (
               placeholder="jack@mail.com"
               className="mr-2"
             />
-            <Button type="submit">Contact me!</Button>
+            <Submit type="submit">Contact me!</Submit>
           </form>
           <Dots className="absolute right-0 bottom-0 w-16 m-4" />
         </Card>
@@ -172,6 +172,26 @@ const Overlay = styled.div`
       border: 4px solid var(--gray-300);
       color: var(--gray-900);
     }
+  }
+`
+
+const Submit = styled.button`
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  line-height: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(180, 10, 10, 0.24);
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background: #ff1414;
+  }
+
+  &:active {
+    background: #e10000;
   }
 `
 
