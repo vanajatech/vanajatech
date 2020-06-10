@@ -86,7 +86,15 @@ const IndexPage = () => (
         <Card className="relative text-center">
           <Dots className="absolute left-0 top-0 w-16 m-4" />
           <CardHeader>Got interested? Let’s get in touch!</CardHeader>
-          <form name="got-interested" netlify>
+          <form
+            name="got-interested"
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <Input
               type="email"
               name="email"
