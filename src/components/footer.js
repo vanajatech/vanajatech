@@ -8,7 +8,7 @@ import Grid from "@material-ui/core/Grid"
 import { Github, Instagram, Linkedin } from "./icons"
 
 const Footer = () => (
-  <Grid container style={{ marginTop: "6rem" }}>
+  <Grid container className="mt-24">
     <Grid item xs>
       <SocialIcons>
         <a href="https://github.com/vanajatech">

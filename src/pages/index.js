@@ -1,17 +1,14 @@
 import React from "react"
 import styled, { createGlobalStyle } from "styled-components"
-// import { Link } from "gatsby"
 import Grid from "@material-ui/core/Grid"
-import Box from "@material-ui/core/Box"
 
+import Button from "../components/button"
+import { Card, CardHeader } from "../components/card"
+import { Row, Col } from "../components/grid"
+import Image from "../components/image"
+import { Input } from "../components/input"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
-import { Row, Col } from "../components/grid"
-import { Card, CardHeader } from "../components/card"
-import { Input } from "../components/input"
-
-import Image from "../components/image"
 
 const IndexPage = () => (
   <Layout>
@@ -41,7 +38,7 @@ const IndexPage = () => (
           className="w-full h-full"
         />
       </Grid>
-      <Grid item md={6} xs={12} style={{ textAlign: "center" }}>
+      <Grid item md={6} xs={12} className="text-center">
         <h2 className="h1">We Do Software</h2>
         <p className="mb-12">
           Chambray plaid edison bulb, church-key occupy you probably haven't

@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import Grid from "@material-ui/core/Grid"
-import Box from "@material-ui/core/Box"
 
 import Layout from "../components/layout"
 import PageHeader from "../components/pageHeader"
@@ -21,7 +20,7 @@ const OurWork = () => (
 
     <Grid container direction="column" alignItems="center" spacing={4}>
       <Grid item md={6} xs={12}>
-        <Grid container wrap="nowrap" style={{ marginBottom: "4rem" }}>
+        <Grid container wrap="nowrap" className="mb-16">
           <Grid item>
             <BigNumber>1</BigNumber>
           </Grid>
@@ -35,7 +34,7 @@ const OurWork = () => (
             <p>Tell us what you need; we’ll dare to implement it.</p>
           </Grid>
         </Grid>
-        <Grid container wrap="nowrap" style={{ marginBottom: "4rem" }}>
+        <Grid container wrap="nowrap" className="mb-16">
           <Grid item>
             <BigNumber>2</BigNumber>
           </Grid>
@@ -52,7 +51,7 @@ const OurWork = () => (
             </p>
           </Grid>
         </Grid>
-        <Grid container wrap="nowrap" style={{ marginBottom: "4rem" }}>
+        <Grid container wrap="nowrap" className="mb-16">
           <Grid item>
             <BigNumber>3</BigNumber>
           </Grid>
@@ -65,7 +64,7 @@ const OurWork = () => (
             </p>
           </Grid>
         </Grid>
-        <Grid container wrap="nowrap" style={{ marginBottom: "4rem" }}>
+        <Grid container wrap="nowrap" className="mb-16">
           <Grid item>
             <BigNumber>4</BigNumber>
           </Grid>
@@ -83,18 +82,16 @@ const OurWork = () => (
     </Grid>
 
     <Grid container direction="column" justify="flex-start" alignItems="center">
-      <Grid item xs>
-        <Box textAlign="center" m="9rem 0 6rem">
-          <h2>Notable Customers</h2>
-          <Box display="flex" alignItems="center" mt="2rem" py="4rem">
-            <TalenomLogo height="48" style={{ paddingRight: "4rem" }} />
-            <Image
-              alt="Oscar Software logo."
-              filename="oscar-logo.png"
-              style={{ width: 210, height: 64 }}
-            />
-          </Box>
-        </Box>
+      <Grid item xs className="text-center mt-32 mb-24">
+        <h2>Notable Customers</h2>
+        <div className="flex items-center mt-8 py-16">
+          <TalenomLogo height="48" className="pr-16" />
+          <Image
+            alt="Oscar Software logo."
+            filename="oscar-logo.png"
+            style={{ width: 210, height: 64 }}
+          />
+        </div>
       </Grid>
     </Grid>
   </Layout>

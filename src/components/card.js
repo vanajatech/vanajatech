@@ -5,7 +5,6 @@ export const Card = styled.div`
   background: #fff;
   box-shadow: 10px 12px 25px rgba(0, 0, 0, 0.05);
   border-radius: 1rem;
-  text-align: ${props => props.textAlign};
 `
 
 export const CardHeader = styled.h2`

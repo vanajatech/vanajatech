@@ -1,14 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import Grid from "@material-ui/core/Grid"
-import Box from "@material-ui/core/Box"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Card } from "../components/card"
 import PageHeader from "../components/pageHeader"
 import StaffListing from "../components/staffListing"
-import { Letter, Phone, Pin } from "../components/icons"
+import { Letter, Phone } from "../components/icons"
 import { BoldLink } from "../components/utilities"
 
 const ContactUs = () => (
@@ -19,36 +18,36 @@ const ContactUs = () => (
     </PageHeader>
 
     <Grid container spacing={4} justify="center">
-      <Grid item lg={3} md={4} sm={6} xs={12}>
-        <ContactCard textAlign="center">
+      <Grid item md={4} sm={6} xs={12}>
+        <ContactCard className="text-center">
           <Letter />
-          <h4>Email</h4>
-          <BoldLink>Send us an email</BoldLink>
+          <h4>Send us an email</h4>
+          <BoldLink href="mailto:info@vanajatech.com">
+            info@vanajatech.com
+          </BoldLink>
         </ContactCard>
       </Grid>
 
-      <Grid item lg={3} md={4} sm={6} xs={12}>
-        <ContactCard textAlign="center">
+      <Grid item md={4} sm={6} xs={12}>
+        <ContactCard className="text-center">
           <Phone />
-          <h4>Call</h4>
-          <BoldLink>Call +358 45 1234 567</BoldLink>
+          <h4>Give us a call</h4>
+          <BoldLink href="tel:+358407537665">+358 40 753 7665</BoldLink>
         </ContactCard>
       </Grid>
 
-      <Grid item lg={3} md={4} sm={6} xs={12}>
-        <ContactCard textAlign="center">
+      {/* <Grid item md={4} sm={6} xs={12}>
+        <ContactCard className="text-center">
           <Pin />
           <h4>Visit</h4>
           <BoldLink>Get directions</BoldLink>
         </ContactCard>
-      </Grid>
+      </Grid> */}
     </Grid>
 
     <Grid container spacing={4} justify="center">
-      <Grid item xs={12}>
-        <Box textAlign="center" m="4rem 0 0">
-          <h2>Our Team</h2>
-        </Box>
+      <Grid item xs={12} className="text-center mt-16">
+        <h2>Our Team</h2>
       </Grid>
       <StaffListing />
     </Grid>

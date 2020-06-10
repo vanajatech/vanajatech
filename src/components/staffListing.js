@@ -30,7 +30,7 @@ const StaffListing = () => (
     query={STAFF_QUERY}
     render={({ allStaffJson }) =>
       allStaffJson.edges.map(({ node }) => (
-        <Grid key={node.name} item lg={3} md={4} sm={6} xs={12}>
+        <Grid key={node.name} item md={4} sm={6} xs={12}>
           <StaffCard>
             <Portrait
               alt="Faceholder."
