@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Vanaja Technologies`,
-    description: `Hi there! We are a happy bunch of Software Developers in Hämeenlinna, Finland - since January 2020!`,
+    description: `Vanaja Techs website built with Gatsby and ☕️. Feel free to use for your own projects as you please.`,
     author: `@VanajaTech`,
   },
   plugins: [

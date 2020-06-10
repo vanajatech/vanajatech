@@ -94,9 +94,9 @@ const Careers = () => (
           You can also send us an open application,{" "}
           <a
             className="text-red font-semibold"
-            href="mailto:careers@vanajatech.com"
+            href="mailto:jobs@vanajatech.com"
           >
-            careers@vanajatech.com
+            jobs@vanajatech.com
           </a>
         </h5>
       </Grid>
