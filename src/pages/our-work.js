@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import PageHeader from "../components/pageHeader"
 import SEO from "../components/seo"
 import Image from "../components/image"
+import ContactForm from "../components/contactForm"
 
 import TalenomLogo from "../images/talenom-logo.svg"
 
@@ -92,6 +93,16 @@ const OurWork = () => (
             style={{ width: 210, height: 64 }}
           />
         </div>
+      </Grid>
+    </Grid>
+
+    <Grid container>
+      <Grid item xs={12}>
+        <ContactForm
+          name="got-interested"
+          title="Got interested? Let's get in touch!"
+          submitText="Contact me!"
+        />
       </Grid>
     </Grid>
   </Layout>

@@ -8,6 +8,7 @@ import PageHeader from "../components/pageHeader"
 import Image from "../components/image"
 import { Card } from "../components/card"
 import { Button } from "../components/button"
+import ContactForm from "../components/contactForm"
 
 const Careers = () => (
   <Layout>
@@ -98,6 +99,16 @@ const Careers = () => (
             careers@vanajatech.com
           </a>
         </h5>
+      </Grid>
+    </Grid>
+
+    <Grid container>
+      <Grid item xs={12}>
+        <ContactForm
+          name="careers"
+          title="Want to know when new positions open?"
+          submitText="Yes!"
+        />
       </Grid>
     </Grid>
   </Layout>

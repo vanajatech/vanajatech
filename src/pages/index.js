@@ -3,18 +3,15 @@ import styled, { createGlobalStyle } from "styled-components"
 import Grid from "@material-ui/core/Grid"
 
 import Button from "../components/button"
-import { Card, CardHeader } from "../components/card"
 import Image from "../components/image"
-import { Input } from "../components/input"
+import ContactForm from "../components/contactForm"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-import Dots from "../images/dots.svg"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <GlobalStyle />
+    <FrontPageStyle />
 
     <Grid container spacing={4}>
       <Grid item xs>
@@ -83,35 +80,17 @@ const IndexPage = () => (
 
     <Grid container>
       <Grid item xs={12}>
-        <Card className="relative text-center">
-          <Dots className="absolute left-0 top-0 w-16 m-4" />
-          <CardHeader>Got interested? Let’s get in touch!</CardHeader>
-          <form
-            name="got-interested"
-            name="contact"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
-            <Input
-              type="email"
-              name="email"
-              placeholder="jack@mail.com"
-              className="mr-2"
-            />
-            <Submit type="submit">Contact me!</Submit>
-          </form>
-          <Dots className="absolute right-0 bottom-0 w-16 m-4" />
-        </Card>
+        <ContactForm
+          name="got-interested"
+          title="Got interested? Let's get in touch!"
+          submitText="Contact me!"
+        />
       </Grid>
     </Grid>
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 )
 
-const GlobalStyle = createGlobalStyle`
+const FrontPageStyle = createGlobalStyle`
   .slogan {
     color: var(--gray-900);
     font-weight: normal;
@@ -180,26 +159,6 @@ const Overlay = styled.div`
       border: 4px solid var(--gray-300);
       color: var(--gray-900);
     }
-  }
-`
-
-const Submit = styled.button`
-  background: var(--primary);
-  color: #fff;
-  font-weight: 700;
-  line-height: 1rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  box-shadow: 2px 2px 5px rgba(180, 10, 10, 0.24);
-  transition: all 0.2s ease-in-out;
-
-  &:hover,
-  &:focus {
-    background: #ff1414;
-  }
-
-  &:active {
-    background: #e10000;
   }
 `
 
