@@ -2,11 +2,39 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap");
 
+/* Style reset */
 @tailwind base;
+
+/*
+  Useful utilities, Postcss removes unused.
+  Documentation at https://tailwindcss.com/.
+*/
+@tailwind utilities;
+
+:root {
+  --primary: #b40a0a;
+  --secondary: #f26c3f;
+  --gray-100: #f9f9f9;
+  --gray-300: #cdd7d6;
+  --gray-500: #5a757f;
+  --gray-900: #1f2538;
+
+  --input-bw: 1px;
+  --input-lh: 1.5rem;
+  --input-py: 0.5rem;
+  --input-px: 1.5rem;
+}
 
 html,
 body {
+  height: 100%;
   color: var(--gray-900);
+}
+
+body {
+  background-color: var(--gray-100);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -54,35 +82,4 @@ p {
   line-height: 24px;
   letter-spacing: 0.02em;
   margin-bottom: 1rem;
-}
-
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --primary: #b40a0a;
-  --secondary: #f26c3f;
-  --gray-100: #f9f9f9;
-  --gray-300: #cdd7d6;
-  --gray-500: #5a757f;
-  --gray-900: #1f2538;
-
-  --input-bw: 1px;
-  --input-lh: 1.5rem;
-  --input-py: 0.5rem;
-  --input-px: 1.5rem;
-}
-
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--gray-100);
-  height: 100%;
 }
