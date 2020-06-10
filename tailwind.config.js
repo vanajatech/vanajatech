@@ -2,7 +2,7 @@ const { colors } = require("@material-ui/core")
 
 module.exports = {
   important: true,
-  purge: [],
+  purge: ["./src/**/*.css", "./src/**/*.svg", "./src/**/*.js"],
   theme: {
     boxShadow: {
       red:
