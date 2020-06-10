@@ -4,11 +4,12 @@ import Grid from "@material-ui/core/Grid"
 
 import Button from "../components/button"
 import { Card, CardHeader } from "../components/card"
-import { Row, Col } from "../components/grid"
 import Image from "../components/image"
 import { Input } from "../components/input"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+import Dots from "../images/dots.svg"
 
 const IndexPage = () => (
   <Layout>
@@ -80,14 +81,24 @@ const IndexPage = () => (
       </Grid>
     </Grid>
 
-    <Row>
-      <Col>
-        <Card textAlign="center">
-          <CardHeader>Join Our Mailing List</CardHeader>
-          <Input type="text" placeholder="jack@mail.com" />
+    <Grid container>
+      <Grid item xs={12}>
+        <Card className="relative text-center">
+          <Dots className="absolute left-0 top-0 w-16 m-4" />
+          <CardHeader>Got interested? Let’s get in touch!</CardHeader>
+          <form name="got-interested" netlify>
+            <Input
+              type="email"
+              name="email"
+              placeholder="jack@mail.com"
+              className="mr-2"
+            />
+            <Button type="submit">Contact me!</Button>
+          </form>
+          <Dots className="absolute right-0 bottom-0 w-16 m-4" />
         </Card>
-      </Col>
-    </Row>
+      </Grid>
+    </Grid>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 )
