@@ -78,15 +78,11 @@ const IndexPage = () => (
       </Grid>
     </Grid>
 
-    <Grid container>
-      <Grid item xs={12}>
-        <ContactForm
-          name="got-interested"
-          title="Got interested? Let's get in touch!"
-          submitText="Contact me!"
-        />
-      </Grid>
-    </Grid>
+    <ContactForm
+      name="got-interested"
+      title="Got interested? Let's get in touch!"
+      submitText="Contact me!"
+    />
   </Layout>
 )
 
