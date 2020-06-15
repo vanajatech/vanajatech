@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import Image from "../components/image"
 import ContactForm from "../components/contactForm"
 
+import DevCell from "../images/dev-cell.svg"
 import TalenomLogo from "../images/talenom-logo.svg"
 
 const OurWork = () => (
@@ -82,6 +83,29 @@ const OurWork = () => (
       </Grid>
     </Grid>
 
+    <Grid container alignItems="center">
+      <Grid item xs={3}>
+        <DevCell />
+      </Grid>
+      <Grid item xs={7} className="mt-32 mb-24 ml-24">
+        <h1 className="m-0">Buy a Dev Cell</h1>
+        <h4>A Dev Cell of 3-6 people is productive and agile.</h4>
+        <p>
+          We provide you with a team that is perfectly suited to build your next
+          product fast and reliably.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </Grid>
+    </Grid>
+
     <Grid container direction="column" justify="flex-start" alignItems="center">
       <Grid item xs className="text-center mt-32 mb-24">
         <h2>Notable Customers</h2>
@@ -96,15 +120,11 @@ const OurWork = () => (
       </Grid>
     </Grid>
 
-    <Grid container>
-      <Grid item xs={12}>
-        <ContactForm
-          name="got-interested"
-          title="Got interested? Let's get in touch!"
-          submitText="Contact me!"
-        />
-      </Grid>
-    </Grid>
+    <ContactForm
+      name="got-interested"
+      title="Got interested? Let's get in touch!"
+      submitText="Contact me!"
+    />
   </Layout>
 )
 

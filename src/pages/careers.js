@@ -1,4 +1,5 @@
 import React from "react"
+import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Grid from "@material-ui/core/Grid"
 
@@ -7,7 +8,6 @@ import SEO from "../components/seo"
 import PageHeader from "../components/pageHeader"
 import Image from "../components/image"
 import { Card } from "../components/card"
-import { Button } from "../components/button"
 import ContactForm from "../components/contactForm"
 
 const Careers = () => (
@@ -28,8 +28,8 @@ const Careers = () => (
         </p>
         <p>
           We want to make sure that everyone in our team feels at home. That’s
-          why we take time to be together every week, be it having fun in
-          Counter-Strike, sweating on the football field or hiking in the
+          why we spend time together every week doing something else than work,
+          be it having fun playing Counter-Strike or football, or hiking in the
           beautiful forests nearby.
         </p>
       </Grid>
@@ -66,28 +66,22 @@ const Careers = () => (
         <h2 className="mb-4">Apply to join our team!</h2>
       </Grid>
 
-      <Grid item xs={6}>
-        <Card>
-          <h4>Senior Software Engineer</h4>
-          <p>
-            Chambray plaid edison bulb, church-key occupy you probably haven't
-            heard of them snackwave pok pok. Vexillologist prism authentic
-            pour-over jean shorts.
-          </p>
-          <Button>Apply</Button>
-        </Card>
-      </Grid>
-      <Grid item xs={6}>
-        <Card>
-          <h4>Junior Software Engineer</h4>
-          <p>
-            Chambray plaid edison bulb, church-key occupy you probably haven't
-            heard of them snackwave pok pok. Vexillologist prism authentic
-            pour-over jean shorts.
-          </p>
-          <Button>Apply</Button>
-        </Card>
-      </Grid>
+      <StaticQuery
+        query={query}
+        render={({ allMarkdownRemark }) =>
+          allMarkdownRemark.edges.map(({ node }) => (
+            <a
+              className="w-full mb-3"
+              href={`/careers${node.frontmatter.slug}`}
+            >
+              <Card className="flex justify-between px-8 py-4">
+                <span className="font-semibold">{node.frontmatter.title}</span>
+                <span>{">"}</span>
+              </Card>
+            </a>
+          ))
+        }
+      />
 
       <Grid item xs={12} className="text-center my-8">
         <h5>
@@ -102,17 +96,30 @@ const Careers = () => (
       </Grid>
     </Grid>
 
-    <Grid container>
-      <Grid item xs={12}>
-        <ContactForm
-          name="careers"
-          title="Want to know when new positions open?"
-          submitText="Yes!"
-        />
-      </Grid>
-    </Grid>
+    <ContactForm
+      name="careers"
+      title="Want to know when new positions open?"
+      submitText="Yes!"
+    />
   </Layout>
 )
+
+export const query = graphql`
+  query OpenPositionsQuery {
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          frontmatter {
+            title
+            date
+            slug
+          }
+        }
+      }
+    }
+  }
+`
 
 const Accent = styled.span`
   color: var(--secondary);

@@ -8,26 +8,9 @@ import { Card } from "./card"
 import { Github, Instagram, Linkedin } from "./icons"
 import { BoldLink } from "./utilities"
 
-const STAFF_QUERY = graphql`
-  query StaffQuery {
-    allStaffJson {
-      edges {
-        node {
-          name
-          email
-          imageUrl
-          github
-          instagram
-          linkedin
-        }
-      }
-    }
-  }
-`
-
 const StaffListing = () => (
   <StaticQuery
-    query={STAFF_QUERY}
+    query={query}
     render={({ allStaffJson }) =>
       allStaffJson.edges.map(({ node }) => (
         <Grid key={node.name} item md={4} sm={6} xs={12}>
@@ -61,6 +44,23 @@ const StaffListing = () => (
     }
   />
 )
+
+const query = graphql`
+  query StaffQuery {
+    allStaffJson {
+      edges {
+        node {
+          name
+          email
+          imageUrl
+          github
+          instagram
+          linkedin
+        }
+      }
+    }
+  }
+`
 
 const StaffCard = styled(Card)`
   text-align: center;
