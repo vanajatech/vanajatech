@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Vanaja Technologies`,
+    title: `Vanaja Tech`,
     description: `Vanaja Techs website built with Gatsby and ☕️. Feel free to use for your own projects as you please.`,
     author: `@VanajaTech`,
   },

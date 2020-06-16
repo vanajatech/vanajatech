@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="lg">
       <Header siteTitle={data.site.siteMetadata.title} />
       {children}
       <Footer />
