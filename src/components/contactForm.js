@@ -8,7 +8,7 @@ import Dots from "../images/dots.svg"
 const ContactForm = ({ name, title, submitText }) => (
   <Grid container className="mt-24">
     <Grid item xs>
-      <Card className="relative text-center">
+      <Card className="relative sm:text-center py-16 px-8 sm:px-8 sm:py-12">
         <Dots className="absolute left-0 top-0 w-16 m-4" />
         <CardHeader>{title}</CardHeader>
         <form
@@ -23,9 +23,11 @@ const ContactForm = ({ name, title, submitText }) => (
             type="email"
             name="email"
             placeholder="john.doe@email.com"
-            className="mr-2"
+            className="mr-2 my-2"
           />
-          <FormButton type="submit">{submitText}</FormButton>
+          <FormButton type="submit" className="my-2">
+            {submitText}
+          </FormButton>
         </form>
         <Dots className="absolute right-0 bottom-0 w-16 m-4" />
       </Card>
