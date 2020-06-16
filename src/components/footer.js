@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import Grid from "@material-ui/core/Grid"
 
@@ -23,13 +23,13 @@ const Footer = () => (
           <Linkedin />
         </a>
       </SocialIcons>
-      {/* <Links>
+      <Links>
+        <Link to="/our-work">Our Work</Link>
+        <Separator>•</Separator>
+        <Link to="/careers">Careers</Link>
+        <Separator>•</Separator>
         <Link to="/contact-us">Contact Us</Link>
-        <span> | </span>
-        <Link to="/privacy-policy">Privacy Policy</Link>
-        <span> | </span>
-        <Link to="/tietosuojaseloste">Tietosuojaseloste</Link>
-      </Links> */}
+      </Links>
       <Copyright>© 2020 Vanaja Tech. All rights reserved.</Copyright>
     </Grid>
   </Grid>
@@ -46,12 +46,18 @@ const SocialIcons = styled.div`
   }
 `
 
-// const Links = styled.div`
-//   color: var(--gray-900);
-//   text-align: center;
-//   margin-top: 2rem;
-//   margin-bottom: 2rem;
-// `
+const Links = styled.div`
+  color: var(--gray-900);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+`
+
+const Separator = styled.span`
+  color: var(--primary);
+  font: 600 1.25rem var(--font-mono);
+  margin: 0 1rem;
+`
 
 const Copyright = styled.p`
   color: var(--gray-900);
