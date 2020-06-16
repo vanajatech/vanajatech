@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `vanaja-technologies`,
+        short_name: `vanajatech`,
         start_url: `/`,
         background_color: `#b40a0a`,
         theme_color: `#b40a0a`,
@@ -44,13 +44,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-plugin-react-svg`,
-      options: {
-        rule: {
-          include: /images/,
-        },
-      },
-    },
+    `gatsby-plugin-react-svg`,
   ],
 }
