@@ -1,8 +1,7 @@
-import { Link } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
-// TODO; Try to reduce the amount of bloat this brings
 import Grid from "@material-ui/core/Grid"
 
 import Logo from "../images/logo.svg"
@@ -25,7 +24,14 @@ const Header = () => (
       </Link>
       <Link to="/careers" className="ml-12">
         Careers
-        <Notification>2</Notification>
+        <StaticQuery
+          query={query}
+          render={data => {
+            return (
+              <Notification>{data.allMarkdownRemark.totalCount}</Notification>
+            )
+          }}
+        />
       </Link>
       <Link to="/contact-us" className="ml-12">
         Contact Us
@@ -41,6 +47,14 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
+
+const query = graphql`
+  query OpenPositionsCountQuery {
+    allMarkdownRemark {
+      totalCount
+    }
+  }
+`
 
 const Container = styled(Grid)`
   padding: 1rem 0;
