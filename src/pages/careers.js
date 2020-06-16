@@ -9,28 +9,27 @@ import PageHeader from "../components/pageHeader"
 import Image from "../components/image"
 import { Card } from "../components/card"
 import ContactForm from "../components/contactForm"
+import { ArrowRight } from "../components/icons"
+import { UnderlinedLink } from "../components/utilities"
 
 const Careers = () => (
   <Layout>
     <SEO title="Join the Team" />
     <PageHeader title="Join the Team">
       <h4>
-        We are always looking for more members to join our Counter-Strike team.
+        We are constantly looking for talented individuals to join our
+        evergrowing team.
       </h4>
     </PageHeader>
 
     <Grid container spacing={4}>
       <Grid item xs={6} className="flex flex-col justify-center pr-8 mb-24">
-        <p>
+        <h2>About Us</h2>
+        <p className="mb-0">
           We’re an innovative and fast growing team of passionate fellows, based
           in Hämeenlinna. Personal and professional development of each and
-          every member of the team is in the heart of Vanaja Tech.
-        </p>
-        <p>
-          We want to make sure that everyone in our team feels at home. That’s
-          why we spend time together every week doing something else than work,
-          be it having fun playing Counter-Strike or football, or hiking in the
-          beautiful forests nearby.
+          every member of the team is in the heart of Vanaja Tech. We want to
+          make sure that everyone in our team feels at home.
         </p>
       </Grid>
 
@@ -54,38 +53,37 @@ const Careers = () => (
         <h2>
           About <Accent>Hämeenlinna</Accent>
         </h2>
-        <p className="mb-0">
+        <p>
           There are 107 towns in Finland, but none of them equals Hämeenlinna,
-          the only town with an ideal combination of <Accent>nature </Accent>
-          and <Accent>culture</Accent>, everything nicely and easily within your
-          reach.
+          the only town with an ideal combination of nature and culture,
+          everything nicely and easily within your reach.
         </p>
+        <p className="mb-0"></p>
       </Grid>
 
       <Grid item xs={12} className="text-center mt-24 mb-8">
         <h2 className="mb-4">Apply to join our team!</h2>
       </Grid>
 
-      <StaticQuery
-        query={query}
-        render={({ allMarkdownRemark }) =>
-          allMarkdownRemark.edges.map(({ node }) => (
-            <a
-              className="w-full mb-3"
-              href={`/careers${node.frontmatter.slug}`}
-            >
-              <Card className="flex justify-between px-8 py-4">
-                <span className="font-semibold">{node.frontmatter.title}</span>
-                <span>{">"}</span>
-              </Card>
-            </a>
-          ))
-        }
-      />
+      <Grid item xs="auto" className="mx-auto">
+        <StaticQuery
+          query={query}
+          render={({ allMarkdownRemark }) =>
+            allMarkdownRemark.edges.map(({ node }) => (
+              <h5 className="mb-6">
+                <UnderlinedLink href={`/careers${node.frontmatter.slug}`}>
+                  {node.frontmatter.title}
+                  {/* <ArrowRight className="ml-6" /> */}
+                </UnderlinedLink>
+              </h5>
+            ))
+          }
+        />
+      </Grid>
 
       <Grid item xs={12} className="text-center my-8">
         <h5>
-          You can also send us an open application,{" "}
+          {"You can also send us an open application, "}
           <a
             className="text-red font-semibold"
             href="mailto:jobs@vanajatech.com"
