@@ -12,16 +12,15 @@ const Header = () => (
     direction="row"
     justify="space-between"
     alignItems="center"
+    spacing={4}
   >
-    <Grid item>
+    <Grid item sm="auto" xs={12} className="flex justify-center">
       <Link to="/">
         <Logo height="48" />
       </Link>
     </Grid>
-    <Grid item>
-      <Link to="/our-work" className="ml-12">
-        Our Work
-      </Link>
+    <Grid item sm="auto" xs={12} className="flex justify-center">
+      <Link to="/our-work">Our Work</Link>
       <Link to="/careers" className="ml-12">
         Careers
         <StaticQuery
