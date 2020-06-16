@@ -4,7 +4,7 @@ date: "2020-06-15"
 title: "Senior Software Engineer"
 ---
 
-> BE SIGNIFICANT - HERE YOU CAN MAKE AN IMPACT
+### BE SIGNIFICANT - HERE YOU CAN MAKE AN IMPACT
 
 At Vanaja Tech, every member of the team matters. You will make an impact and have a part in determining the success of the company.
 
@@ -21,3 +21,7 @@ Most of our projects are done using Javascript and node.js. Browser technologies
 We offer you a competitive salary and plenty of opportunities for personal growth as a professional in the industry.
 
 The work will be done in Hämeenlinna.
+
+<br />
+
+#### Send us your application, <a href="mailto:jobs@vanajatech.com" style="color: var(--primary);">jobs@vanajatech.com</a>
