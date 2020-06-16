@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.vanajatech.com">
-    <img alt="Vanaja Tech logo." src="/src/images/logo.svg" width="120" />
+    <img alt="Vanaja Tech logo." src="/src/images/logo.png" width="120" />
   </a>
 </p>
 <h1 align="center">
@@ -44,8 +44,8 @@
 
 ## 🎓 Learning Gatsby
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+Looking for more guidance? Full documentation for Gatsby lives [on their website](https://www.gatsbyjs.org/). Here are some places to start:
 
-- **For most developers, we recommend starting with the Gatsby team's [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+- **For most developers, we recommend starting with the Gatsby's [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to their documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
