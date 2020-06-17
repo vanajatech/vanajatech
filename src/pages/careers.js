@@ -7,9 +7,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageHeader from "../components/pageHeader"
 import Image from "../components/image"
-import { Card } from "../components/card"
-import ContactForm from "../components/contactForm"
-import { ArrowRight } from "../components/icons"
 import { UnderlinedLink } from "../components/utilities"
 
 const Careers = () => (
@@ -93,12 +90,6 @@ const Careers = () => (
         </h5>
       </Grid>
     </Grid>
-
-    <ContactForm
-      name="careers"
-      title="Want to know when new positions open?"
-      submitText="Yes!"
-    />
   </Layout>
 )
 
