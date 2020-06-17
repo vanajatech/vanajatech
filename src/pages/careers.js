@@ -50,16 +50,15 @@ const Careers = () => (
         <h2>
           About <Accent>Hämeenlinna</Accent>
         </h2>
-        <p>
+        <p className="mb-0">
           There are 107 towns in Finland, but none of them equals Hämeenlinna,
           the only town with an ideal combination of nature and culture,
           everything nicely and easily within your reach.
         </p>
-        <p className="mb-0"></p>
       </Grid>
 
       <Grid item xs={12} className="text-center mt-24 mb-8">
-        <h2 className="mb-4">Apply to join our team!</h2>
+        <h2 className="mb-4">Open Positions</h2>
       </Grid>
 
       <Grid item xs="auto" className="mx-auto">
