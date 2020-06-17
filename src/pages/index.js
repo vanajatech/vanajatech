@@ -15,20 +15,18 @@ const IndexPage = () => (
 
     <Grid container spacing={4}>
       <Grid item xs>
-        <h1 className="slogan">
-          Ideas are cheap;
+        <h1 className="slogan mt-16 md:mt-32 mb-0">
+          Talk is cheap;
           <br />
-          <span className="big-text-pls-rename">execution is everything.</span>
-          <br />
-          That’s where we at Vanaja Technologies come in.
+          <span className="h1 font-bold">execution is everything.</span>
         </h1>
-        <h2 className="slogan">
-          Our expertise in world-class applications ensures your success.
+        <h2 className="slogan mb-16 md:mb-32">
+          Vanaja Technologies is a software house in Hämeenlinna, Finland.
         </h2>
       </Grid>
     </Grid>
 
-    <Grid container spacing={4} className="mb-32">
+    <Grid container spacing={4} className="mb-16 md:mb-32">
       <Grid item md={6} xs={12}>
         <Image
           alt="Window a day keeps Matti away."
@@ -36,7 +34,12 @@ const IndexPage = () => (
           className="w-full h-full"
         />
       </Grid>
-      <Grid item md={6} xs={12} className="text-center">
+      <Grid
+        item
+        md={6}
+        xs={12}
+        className="flex flex-col justify-center items-center text-center"
+      >
         <h2 className="h1">We Do Software</h2>
         <p className="mb-12">
           Chambray plaid edison bulb, church-key occupy you probably haven't
@@ -48,7 +51,7 @@ const IndexPage = () => (
       </Grid>
     </Grid>
 
-    <Grid container className="mb-32 relative">
+    <Grid container className="mb-16 md:mb-32 relative">
       <Grid item xs>
         <Image
           alt="Vanaja Tech team doing something fun together."
@@ -70,7 +73,7 @@ const IndexPage = () => (
       </Grid>
     </Grid>
 
-    <Grid container spacing={4} className="mb-32">
+    <Grid container spacing={4} className="mb-16 md:mb-32">
       <Grid item xs className="text-center">
         <h2 className="h1 m-0">Contact Us</h2>
         <h4 className="mb-8">We are always looking for new opporturnities.</h4>
@@ -93,19 +96,6 @@ const FrontPageStyle = createGlobalStyle`
     font-size: 2.25rem;
     line-height: 1.25;
     margin-bottom: 3rem;
-
-    &:first-child {
-      margin-top: 9rem;
-    }
-
-    &:last-child {
-      margin-bottom: 9rem;
-    }
-  }
-
-  .big-text-pls-rename {
-    font-size: 2.75rem;
-    line-height: 1.25;
   }
 
   .h1 {
@@ -120,7 +110,7 @@ const Overlay = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 8rem;
+  padding: 1rem;
   text-align: center;
   background-color: var(--gray-900);
   background-color: rgba(31, 37, 56, 0.5);
@@ -129,9 +119,10 @@ const Overlay = styled.div`
   width: 100%;
 
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.25;
     margin-bottom: 2rem;
+    max-width: 75%;
   }
 
   a {
@@ -139,10 +130,11 @@ const Overlay = styled.div`
     background: transparent;
     border: 4px solid #fff;
     border-radius: 0.5rem;
-    padding: 1.5rem 2rem;
+    padding: 1rem 1.5rem;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1;
+    box-shadow: none;
 
     &:hover,
     &:focus {
