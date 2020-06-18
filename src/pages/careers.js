@@ -33,7 +33,7 @@ const Careers = () => (
       <Grid item xs={6} className="mb-24">
         <Image
           alt="Our team."
-          filename="annie-spratt-QckxruozjRg-unsplash.jpg"
+          filename="IMG_4219.jpg"
           className="w-full h-full"
         />
       </Grid>

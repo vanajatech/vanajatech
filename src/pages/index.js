@@ -55,7 +55,7 @@ const IndexPage = () => (
       <Grid item xs>
         <Image
           alt="Vanaja Tech team doing something fun together."
-          filename="timmy-wesley-3Ltn2aWVNcM-unsplash.jpg"
+          filename="IMG_4219.jpg"
           className="w-full h-full"
           style={{ maxHeight: 720 }}
         />
