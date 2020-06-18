@@ -60,7 +60,7 @@ const IndexPage = () => (
           style={{ maxHeight: 720 }}
         />
       </Grid>
-      <Grid item xs xs={12} className="md:absolute md:h-full">
+      <Grid item xs={12} className="md:absolute md:h-full">
         <Overlay>
           <h2 className="h1">Join the Team</h2>
           <p>
