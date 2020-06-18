@@ -19,7 +19,7 @@ const ContactForm = ({ name, title, submitText }) => (
         >
           <input type="hidden" name="bot-field" />
           <input type="hidden" name={name} value="contact" />
-          <label for="email" className="hidden">
+          <label htmlFor="email" className="hidden">
             E-mail
           </label>
           <Input

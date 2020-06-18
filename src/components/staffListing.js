@@ -15,10 +15,7 @@ const StaffListing = () => (
       allStaffJson.edges.map(({ node }) => (
         <Grid key={node.name} item md={4} sm={6} xs={12}>
           <StaffCard>
-            <Portrait
-              alt="Faceholder."
-              filename={node.imageUrl ? node.imageUrl : "face-1.png"}
-            />
+            <Portrait alt="Faceholder." filename={node.imageUrl} />
             <h4>{node.name}</h4>
             <BoldLink>{node.email}</BoldLink>
             <SocialIcons>
