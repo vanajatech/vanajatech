@@ -64,7 +64,6 @@ module.exports = {
     `gatsby-plugin-netlify`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-remove-trailing-slashes`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
