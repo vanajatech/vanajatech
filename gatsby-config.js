@@ -64,5 +64,20 @@ module.exports = {
     `gatsby-plugin-netlify`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `IBM Plex Sans`,
+            variants: [`400`, `500`, `600`, `700`],
+          },
+          {
+            family: `IBM Plex Mono`,
+            variants: [`600`],
+          },
+        ],
+      },
+    },
   ],
 }

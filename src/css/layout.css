@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap");
-
 /* Style reset */
 @tailwind base;
 
@@ -18,8 +15,8 @@
   --gray-500: #5a757f;
   --gray-900: #1f2538;
 
-  --font-sans: "IMB Plex Sans";
-  --font-mono: "IMB Plex Mono";
+  --font-sans: "IBM Plex Sans";
+  --font-mono: "IBM Plex Mono";
 }
 
 html,

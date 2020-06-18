@@ -92,7 +92,7 @@ const IndexPage = () => (
 const FrontPageStyle = createGlobalStyle`
   .slogan {
     color: var(--gray-900);
-    font-weight: normal;
+    font-weight: 400;
     font-size: 2.25rem;
     line-height: 1.25;
     margin-bottom: 3rem;
@@ -133,7 +133,7 @@ const Overlay = styled.div`
       border: 4px solid #fff;
       border-radius: 0.5rem;
       padding: 1rem 1.5rem;
-      font-weight: bold;
+      font-weight: 700;
       font-size: 1.25rem;
       line-height: 1;
       box-shadow: none;
