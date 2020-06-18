@@ -3,6 +3,7 @@ module.exports = {
     title: `Vanaja Tech`,
     description: `Vanaja Tech's website built with Gatsby and ☕️. Feel free to use for your own projects as you please.`,
     author: `@VanajaTech`,
+    siteUrl: `https://vanajatech.netlify.app`,
   },
   plugins: [
     {
@@ -54,5 +55,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
   ],
 }
