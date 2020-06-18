@@ -48,7 +48,7 @@ const IndexPage = () => (
           pour-over jean shorts. Pok pok artisan everyday carry food truck,
           messenger bag hoodie offal bespoke four loko.
         </p>
-        <Button to="/our-work">See More</Button>
+        <Button to="/our-work/">See More</Button>
       </Grid>
     </Grid>
 
@@ -70,7 +70,7 @@ const IndexPage = () => (
             based in Hämeenlinna. Personal and professional development of each
             and every member of the team is in the heart of Vanaja Tech.
           </p>
-          <Button to="/careers">See Open Positions</Button>
+          <Button to="/careers/">See Open Positions</Button>
         </Overlay>
       </Grid>
     </Grid>
@@ -79,7 +79,7 @@ const IndexPage = () => (
       <Grid item xs className="text-center">
         <h2 className="h1 m-0">Contact Us</h2>
         <h4 className="mb-8">We are always looking for new opporturnities.</h4>
-        <Button to="/contact-us">Contact Us</Button>
+        <Button to="/contact-us/">Contact Us</Button>
       </Grid>
     </Grid>
 

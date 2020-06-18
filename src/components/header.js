@@ -20,8 +20,8 @@ const Header = () => (
       </Link>
     </Grid>
     <Grid item sm="auto" xs={12} className="flex justify-center">
-      <Link to="/our-work">Our Work</Link>
-      <Link to="/careers" className="ml-12">
+      <Link to="/our-work/">Our Work</Link>
+      <Link to="/careers/" className="ml-12">
         Careers
         <StaticQuery
           query={query}
@@ -32,7 +32,7 @@ const Header = () => (
           }}
         />
       </Link>
-      <Link to="/contact-us" className="ml-12">
+      <Link to="/contact-us/" className="ml-12">
         Contact Us
       </Link>
     </Grid>

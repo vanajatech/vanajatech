@@ -24,11 +24,11 @@ const Footer = () => (
         </a>
       </SocialIcons>
       <Links>
-        <Link to="/our-work">Our Work</Link>
+        <Link to="/our-work/">Our Work</Link>
         <Separator>•</Separator>
-        <Link to="/careers">Careers</Link>
+        <Link to="/careers/">Careers</Link>
         <Separator>•</Separator>
-        <Link to="/contact-us">Contact Us</Link>
+        <Link to="/contact-us/">Contact Us</Link>
       </Links>
       <Copyright>© 2020 Vanaja Tech. All rights reserved.</Copyright>
     </Grid>
