@@ -51,8 +51,8 @@ const IndexPage = () => (
       </Grid>
     </Grid>
 
-    <Grid container className="mb-16 md:mb-32 relative">
-      <Grid item xs>
+    <Grid container spacing={4} className="mb-16 md:mb-32 md:relative">
+      <Grid item xs={12}>
         <Image
           alt="Vanaja Tech team doing something fun together."
           filename="IMG_4219.jpg"
@@ -60,7 +60,7 @@ const IndexPage = () => (
           style={{ maxHeight: 720 }}
         />
       </Grid>
-      <Grid item xs className="absolute h-full">
+      <Grid item xs xs={12} className="md:absolute md:h-full">
         <Overlay>
           <h2 className="h1">Join the Team</h2>
           <p>
@@ -110,42 +110,45 @@ const Overlay = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
   text-align: center;
-  background-color: var(--gray-900);
-  background-color: rgba(31, 37, 56, 0.5);
-  color: var(--gray-100);
   height: 100%;
   width: 100%;
 
-  p {
-    font-size: 1.5rem;
-    line-height: 1.25;
-    margin-bottom: 2rem;
-    max-width: 75%;
-  }
+  @media (min-width: 768px) {
+    background-color: var(--gray-900);
+    background-color: rgba(31, 37, 56, 0.5);
+    color: var(--gray-100);
+    padding: 1rem;
 
-  a {
-    color: #fff;
-    background: transparent;
-    border: 4px solid #fff;
-    border-radius: 0.5rem;
-    padding: 1rem 1.5rem;
-    font-weight: bold;
-    font-size: 1.25rem;
-    line-height: 1;
-    box-shadow: none;
-
-    &:hover,
-    &:focus {
-      background: #fff;
-      color: var(--gray-900);
+    p {
+      font-size: 1.5rem;
+      line-height: 1.25;
+      margin-bottom: 2rem;
+      max-width: 75%;
     }
 
-    &:active {
-      background: var(--gray-300);
-      border: 4px solid var(--gray-300);
-      color: var(--gray-900);
+    a {
+      color: #fff;
+      background: transparent;
+      border: 4px solid #fff;
+      border-radius: 0.5rem;
+      padding: 1rem 1.5rem;
+      font-weight: bold;
+      font-size: 1.25rem;
+      line-height: 1;
+      box-shadow: none;
+
+      &:hover,
+      &:focus {
+        background: #fff;
+        color: var(--gray-900);
+      }
+
+      &:active {
+        background: var(--gray-300);
+        border: 4px solid var(--gray-300);
+        color: var(--gray-900);
+      }
     }
   }
 `
