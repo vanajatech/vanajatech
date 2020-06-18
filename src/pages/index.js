@@ -29,9 +29,10 @@ const IndexPage = () => (
     <Grid container spacing={4} className="mb-16 md:mb-32">
       <Grid item md={6} xs={12}>
         <Image
-          alt="Window a day keeps Matti away."
-          filename="windows-2EwyKv4-03k-unsplash.jpg"
+          alt="Two guys one terminal."
+          filename="IMG_4489.jpg"
           className="w-full h-full"
+          withWebp
         />
       </Grid>
       <Grid
@@ -57,6 +58,7 @@ const IndexPage = () => (
           alt="Vanaja Tech team playing football."
           filename="IMG_4219.jpg"
           className="w-full h-full"
+          withWebp
           style={{ maxHeight: 720 }}
         />
       </Grid>
@@ -116,7 +118,7 @@ const Overlay = styled.div`
 
   @media (min-width: 768px) {
     background-color: var(--gray-900);
-    background-color: rgba(31, 37, 56, 0.5);
+    background-color: rgba(31, 37, 56, 0.35);
     color: var(--gray-100);
     padding: 1rem;
 

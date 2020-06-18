@@ -115,6 +115,7 @@ const OurWork = () => (
             alt="Oscar Software logo."
             filename="oscar-logo.png"
             style={{ width: 210, height: 64 }}
+            withWebp
           />
         </div>
       </Grid>

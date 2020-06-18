@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.vanajatech.com">
-    <img alt="Vanaja Tech logo." src="/src/images/logo.png" width="120" />
+    <img alt="Vanaja Tech logo." src="/src/images/logo.jpg" width="120" />
   </a>
 </p>
 <h1 align="center">

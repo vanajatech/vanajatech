@@ -15,7 +15,7 @@ const StaffListing = () => (
       allStaffJson.edges.map(({ node }) => (
         <Grid key={node.name} item md={4} sm={6} xs={12}>
           <StaffCard>
-            <Portrait alt="Faceholder." filename={node.imageUrl} />
+            <Portrait alt="Faceholder." filename={node.imageUrl} withWebp />
             <h4>{node.name}</h4>
             <BoldLink>{node.email}</BoldLink>
             <SocialIcons>
