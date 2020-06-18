@@ -54,7 +54,7 @@ const IndexPage = () => (
     <Grid container spacing={4} className="mb-16 md:mb-32 md:relative">
       <Grid item xs={12}>
         <Image
-          alt="Vanaja Tech team doing something fun together."
+          alt="Vanaja Tech team playing football."
           filename="IMG_4219.jpg"
           className="w-full h-full"
           style={{ maxHeight: 720 }}
