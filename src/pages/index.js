@@ -130,9 +130,8 @@ const Overlay = styled.div`
     }
 
     a {
-      color: #fff;
-      background: transparent;
-      border: 4px solid #fff;
+      background: rgba(255, 255, 255, 1);
+      color: var(--gray-900);
       border-radius: 0.5rem;
       padding: 1rem 1.5rem;
       font-weight: 700;
@@ -142,13 +141,12 @@ const Overlay = styled.div`
 
       &:hover,
       &:focus {
-        background: #fff;
+        background: rgba(255, 255, 255, 0.8);
         color: var(--gray-900);
       }
 
       &:active {
-        background: var(--gray-300);
-        border: 4px solid var(--gray-300);
+        background: rgba(255, 255, 255, 0.9);
         color: var(--gray-900);
       }
     }
