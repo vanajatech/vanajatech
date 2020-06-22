@@ -1,12 +1,11 @@
 import { Link, StaticQuery, graphql } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import Grid from "@material-ui/core/Grid"
 
 import Logo from "../images/logo.svg"
 
-const Header = () => (
+const Nav = () => (
   <Container
     container
     direction="row"
@@ -39,14 +38,6 @@ const Header = () => (
   </Container>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
 const query = graphql`
   query OpenPositionsCountQuery {
     allMarkdownRemark {
@@ -73,4 +64,4 @@ const Notification = styled.span`
   margin-left: 8px;
 `
 
-export default Header
+export default Nav

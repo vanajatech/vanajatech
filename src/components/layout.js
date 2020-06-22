@@ -1,38 +1,48 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { motion, AnimatePresence } from "framer-motion"
 import Container from "@material-ui/core/Container"
 
-import Header from "./header"
+import Nav from "./nav"
 import Footer from "./footer"
 import "../css/layout.css"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+const duration = 0.1
 
-  return (
-    <Container maxWidth="lg">
-      <Header siteTitle={data.site.siteMetadata.title} />
-      {children}
-      <Footer />
-    </Container>
-  )
+const variants = {
+  initial: {
+    opacity: 0,
+  },
+  enter: {
+    opacity: 1,
+    transition: {
+      duration: duration,
+      delay: duration,
+      when: "beforeChildren",
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: duration },
+  },
 }
+
+const Layout = ({ children }) => (
+  <Container maxWidth="lg">
+    <Nav />
+    <AnimatePresence>
+      <motion.main
+        variants={variants}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+      >
+        {children}
+      </motion.main>
+    </AnimatePresence>
+    <Footer />
+  </Container>
+)
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
