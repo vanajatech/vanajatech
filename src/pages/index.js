@@ -54,7 +54,7 @@ const IndexPage = () => (
       <Grid item xs={12}>
         <Image
           alt="Vanaja Tech team playing football."
-          filename="IMG_4290.jpg"
+          filename="IMG_4219_2.jpg"
           className="w-full h-full"
           withWebp
           style={{ maxHeight: 720 }}
