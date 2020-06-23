@@ -91,7 +91,7 @@ const OurWork = () => (
             xs={12}
             className="text-center md:text-left mb-4"
           >
-            <BigNumber>4</BigNumber>
+            <BigNumber>3</BigNumber>
           </Grid>
           <Grid
             item
@@ -116,7 +116,7 @@ const OurWork = () => (
             xs={12}
             className="text-center md:text-left mb-4"
           >
-            <BigNumber>2</BigNumber>
+            <BigNumber>4</BigNumber>
           </Grid>
           <Grid
             item
