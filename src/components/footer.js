@@ -30,7 +30,7 @@ const Footer = () => (
         <Separator>•</Separator>
         <Link to="/contact-us/">Contact Us</Link>
       </Links>
-      <Copyright>© 2020 Vanaja Technologies Ltd. All rights reserved.</Copyright>
+      <Copyright>© Vanaja Technologies Ltd. since 2020. All rights reserved.</Copyright>
     </Grid>
   </Grid>
 )
