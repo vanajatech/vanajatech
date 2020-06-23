@@ -16,9 +16,9 @@ const IndexPage = () => (
     <Grid container spacing={4}>
       <Grid item xs>
         <h1 className="slogan mt-16 md:mt-32 mb-2">
-          Ideas are good; planning is important, but
+Technology Partnership with Organisations that
           <br />
-          <span className="h1 font-bold">execution is everything.</span>
+          <span className="h1 font-bold">Form The Future.</span>
         </h1>
         <h2 className="slogan mb-16 md:mb-32">
           Vanaja Technologies is a software house in Hämeenlinna, Finland.
@@ -43,10 +43,9 @@ const IndexPage = () => (
       >
         <h2 className="h1">We Do Software</h2>
         <p className="mb-12">
-          Chambray plaid edison bulb, church-key occupy you probably haven't
-          heard of them snackwave pok pok. Vexillologist prism authentic
-          pour-over jean shorts. Pok pok artisan everyday carry food truck,
-          messenger bag hoodie offal bespoke four loko.
+Software helps people to do things they were unable to do before. 
+  Best apps, websites and back office systems empower consumers, teams and organisations with new tools that bring satisfaction, boost productivity and reach new customer segments or markets. 
+  </p><p>Building those tools is our bread and butter. We would love to do it for you. 
         </p>
         <Button to="/our-work/">See More</Button>
       </Grid>
