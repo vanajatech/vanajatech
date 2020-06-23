@@ -107,7 +107,7 @@ const FrontPageStyle = createGlobalStyle`
   }
 
   .h1 {
-    font-size: 72px;
+    font-size: 3rem;
     line-height: 1.25;
     letter-spacing: -0.06em;
   }
