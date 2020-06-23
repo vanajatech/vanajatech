@@ -42,14 +42,10 @@ const IndexPage = () => (
       >
         <h2>We Do Software</h2>
         <p className="mb-12">
-          Software helps people to do things they were unable to do before. Best
-          apps, websites and back office systems empower consumers, teams and
-          organisations with new tools that bring satisfaction, boost
-          productivity and reach new customer segments or markets.
+Best apps, websites and back office systems are tools for <b>boosting productity</b> for individuals or teams, <b>bringing satisfaction</b> to users and enabling <b>access to new customer segments</b> or markets.    
         </p>
         <p>
-          Building those tools is our bread and butter. We would love to do it
-          for you.
+          Building those tools is our bread and butter. We would love to build your tools with you. 
         </p>
         <Button to="/our-work/">See More</Button>
       </Grid>
