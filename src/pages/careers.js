@@ -62,7 +62,6 @@ const Careers = () => (
         </h2>
         <p className="mb-0">
           Hämeenlinna is an old city with an ideal combination of nature and culture,
- with an ideal combination of nature and culture,
           everything nicely and easily within your reach. Its location between the cities of Helsinki and Tampere is very convenient. Local home prices are reasonable. Welcome!
         </p>
       </Grid>
