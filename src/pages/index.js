@@ -42,7 +42,7 @@ const IndexPage = () => (
       >
         <h2>We Do Software</h2>
         <p className="mb-12">
-Best apps, websites and back office systems are tools for <b>boosting productity</b> for individuals or teams, <b>bringing satisfaction</b> to users and enabling <b>access to new customer segments</b> or markets.    
+Best apps, websites and back office systems are tools for <b>boosting productivity</b> of individuals or teams, <b>bringing satisfaction</b> to users and enabling <b>access to new customer segments</b> or markets.    
         </p>
         <p>
           Building those tools is our bread and butter. We would love to build your tools with you. 
