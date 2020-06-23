@@ -17,7 +17,7 @@ const OurWork = () => (
     <PageHeader title="Our Work">
       <h4>
         We partner with our customers to design, implement and deliver software
-        projects. Mutual trust and sufficient transparency are a must in all we
+        projects. Mutual trust and significant transparency are a must in all we
         do.
       </h4>
     </PageHeader>
