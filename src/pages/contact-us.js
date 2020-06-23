@@ -35,14 +35,6 @@ const ContactUs = () => (
           <BoldLink href="tel:+358407537665">+358 40 753 7665</BoldLink>
         </ContactCard>
       </Grid>
-
-      {/* <Grid item md={4} sm={6} xs={12}>
-        <ContactCard className="text-center">
-          <Pin />
-          <h4>Visit</h4>
-          <BoldLink>Get directions</BoldLink>
-        </ContactCard>
-      </Grid> */}
     </Grid>
 
     <Grid container spacing={4} justify="center">

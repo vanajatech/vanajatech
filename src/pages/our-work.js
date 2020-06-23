@@ -84,10 +84,10 @@ const OurWork = () => (
     </Grid>
 
     <Grid container alignItems="center">
-      <Grid item xs={3}>
+      <Grid item md={3} xs={12}>
         <DevCell />
       </Grid>
-      <Grid item xs={7} className="mt-32 mb-24 ml-24">
+      <Grid item md={7} xs={12} className="mt-32 mb-24 md:ml-24">
         <h1 className="m-0">Buy a Dev Cell</h1>
         <h4>A Dev Cell of 3-6 people is productive and agile.</h4>
         <p>

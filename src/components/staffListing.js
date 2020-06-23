@@ -17,7 +17,7 @@ const StaffListing = () => (
           <StaffCard>
             <Portrait alt="Faceholder." filename={node.imageUrl} withWebp />
             <h4>{node.name}</h4>
-            <BoldLink>{node.email}</BoldLink>
+            <BoldLink href={`mailto:` + node.email}>{node.email}</BoldLink>
             <SocialIcons>
               {node.github && (
                 <a href={node.github}>
