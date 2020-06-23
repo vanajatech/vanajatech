@@ -184,7 +184,8 @@ const OurWork = () => (
         </p>
         <p>
           Additionally, a project manager can be added to the cell, if there are
-          several dependencies to other teams or if very detailed or frequent reporting or planning is necessary.
+          several dependencies to other teams or if very detailed or frequent
+          reporting or planning is necessary.
         </p>
       </Grid>
     </Grid>

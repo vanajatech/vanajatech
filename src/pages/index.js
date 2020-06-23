@@ -80,10 +80,8 @@ const IndexPage = () => (
 
     <Grid container spacing={4} className="mb-16 md:mb-32">
       <Grid item xs className="text-center">
-        <h2 className="m-0">Contact Us</h2>
-        <h4 className="mb-8">
-          We want to help you build your next ambitious project
-        </h4>
+        <h2>Contact Us</h2>
+        <p>We want to help you build your next ambitious project</p>
         <Button to="/contact-us/">Contact Us</Button>
       </Grid>
     </Grid>
