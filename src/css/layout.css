@@ -31,48 +31,54 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
+h1,
+.h1 {
   font-weight: 700;
-  font-size: 72px;
+  font-size: 4.5rem;
   line-height: 1.25;
   letter-spacing: -0.06em;
   margin-bottom: 2rem;
 }
 
-h2 {
+h2,
+.h2 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 1.25;
   letter-spacing: -0.04em;
   margin-bottom: 2rem;
 }
 
-h3 {
+h3,
+.h3 {
   font-weight: 600;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.25;
   letter-spacing: -0.06em;
   margin-bottom: 1rem;
 }
 
-h4 {
+h4,
+.h4 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.25;
   margin-bottom: 1rem;
 }
 
-h5 {
+h5,
+.h5 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.5;
   letter-spacing: 0.03em;
   margin-bottom: 1rem;
 }
 
-p {
+p,
+.p {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.25;
   letter-spacing: 0.02em;
   margin-bottom: 1rem;
