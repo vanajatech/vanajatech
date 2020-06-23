@@ -109,7 +109,7 @@ const OurWork = () => (
             <p> These are questions we consider in all projects.</p>
           </Grid>
         </Grid>
-  <Grid container justify="center" className="mb-16">
+        <Grid container justify="center" className="mb-16">
           <Grid
             item
             md="auto"
@@ -133,7 +133,7 @@ const OurWork = () => (
             </p>
           </Grid>
         </Grid>
-        <Grid container justify="center" className="mb-16">
+        <Grid container justify="center" className="md:mb-16">
           <Grid
             item
             md="auto"
