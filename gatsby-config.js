@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Vanaja Tech`,
-    description: `Vanaja Tech's website built with Gatsby and ☕️. Feel free to use for your own projects as you please.`,
+    description: `Technology partnership with organisations that Form The Future.`,
     author: `@VanajaTech`,
-    siteUrl: `https://vanajatech.netlify.app`,
+    siteUrl: `https://vanaja.tech`,
   },
   plugins: [
     {
