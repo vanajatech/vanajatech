@@ -16,9 +16,6 @@ const Footer = () => (
         <a href="https://github.com/vanajatech">
           <Github />
         </a>
-        {/* <a href="https://www.instagram.com/vanajatech/">
-          <Instagram />
-        </a> */}
         <a href="https://www.linkedin.com/company/vanaja-tech/">
           <Linkedin />
         </a>
@@ -31,7 +28,7 @@ const Footer = () => (
         <Link to="/contact-us/">Contact Us</Link>
       </Links>
       <Copyright>
-        © 2020 Vanaja Technologies Ltd. All rights reserved.
+        © Vanaja Technologies Ltd. since 2020. All rights reserved.
       </Copyright>
     </Grid>
   </Grid>
