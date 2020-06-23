@@ -10,7 +10,7 @@ const ThankYou = () => (
     <SEO title="Thank you!" />
 
     <PageHeader title="Thank you!">
-      <p>Your form submission has been received.</p>
+      <p>Your contact information has been received.</p>
       <p>
         <BoldLink href="/">← Back to home page</BoldLink>
       </p>
