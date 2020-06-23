@@ -43,13 +43,7 @@ const OurWork = () => (
           <Grid item xs zeroMinWidth>
             <h3>Specialty: Business Services and Finance</h3>
             <p>
-              Chambray plaid edison bulb, church-key occupy you probably haven't
-              heard of them snackwave pok pok. Vexillologist prism authentic
-              pour-over jean shorts.
-            </p>
-            <p>
-              Pok pok artisan everyday carry food truck, messenger bag hoodie
-              offal bespoke four loko.
+              The banking and finance industries are on the brink of a revolution. Open Banking interfaces (PSD2) are real today. We can guide you through the change and help you catch new opportunities. 
             </p>
           </Grid>
         </Grid>
@@ -64,6 +58,7 @@ const OurWork = () => (
               Instead of contemplating what to do, we approach problems head on
               and progress to pick the right way to proceed.
             </p>
+<p>We do not plan our projects to death. Instead, we estimate feasibility, then create a rough plan, and decide weekly actions dynamically week by week. </p>
           </Grid>
         </Grid>
         <Grid container wrap="nowrap" className="mb-16">
@@ -95,13 +90,8 @@ const OurWork = () => (
           product fast and reliably.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+A dev cell may consist of a very senior programmer, a few junior programmers and a testing specialist. The senior programmer will guide and lead the project responsibly. Additionally, a project manager can be added to the cell, if there are several dependencies to other teams or if accurate reporting and planning is necessary. 
+
         </p>
       </Grid>
     </Grid>
