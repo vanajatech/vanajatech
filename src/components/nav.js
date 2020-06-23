@@ -19,8 +19,11 @@ const Nav = () => (
       </Link>
     </Grid>
     <Grid item sm="auto" xs={12} className="flex justify-center">
-      <Link to="/our-work/">Our Work</Link>
-      <Link to="/careers/" className="ml-12">
+      <Link to="/">Home</Link>
+      <Link to="/our-work/" className="ml-6 sm:ml-12">
+        Our Work
+      </Link>
+      <Link to="/careers/" className="ml-6 sm:ml-12">
         Careers
         <StaticQuery
           query={query}
@@ -31,7 +34,7 @@ const Nav = () => (
           }}
         />
       </Link>
-      <Link to="/contact-us/" className="ml-12">
+      <Link to="/contact-us/" className="ml-6 sm:ml-12">
         Contact Us
       </Link>
     </Grid>
@@ -55,13 +58,14 @@ const Notification = styled.span`
   color: #fff;
   font-size: 0.75rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 900;
   border-radius: 99px;
   line-height: 1rem;
   position: absolute;
   width: 1rem;
   height: 1rem;
-  margin-left: 8px;
+  margin-top: -4px;
+  margin-left: 2px;
 `
 
 export default Nav
