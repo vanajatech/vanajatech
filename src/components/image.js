@@ -37,6 +37,7 @@ const Image = props => (
           alt={props.alt}
           fluid={image.node.childImageSharp.fluid}
           style={props.style}
+          imgStyle={props.imgStyle}
           className={props.className}
         />
       )

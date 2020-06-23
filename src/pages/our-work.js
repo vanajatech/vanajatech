@@ -30,7 +30,7 @@ const OurWork = () => (
       spacing={4}
     >
       <Grid item md={6} xs={12}>
-        <Grid container justify="center" className="mb-16">
+        <Grid container justify="center" spacing={2} className="mb-16">
           <Grid
             item
             md="auto"
@@ -55,7 +55,7 @@ const OurWork = () => (
             <p>Tell us what you need; we’ll dare to implement it.</p>
           </Grid>
         </Grid>
-        <Grid container justify="center" className="mb-16">
+        <Grid container justify="center" spacing={2} className="mb-16">
           <Grid
             item
             md="auto"
@@ -84,7 +84,7 @@ const OurWork = () => (
             </p>
           </Grid>
         </Grid>
-        <Grid container justify="center" className="mb-16">
+        <Grid container justify="center" spacing={2} className="mb-16">
           <Grid
             item
             md="auto"
@@ -109,7 +109,7 @@ const OurWork = () => (
             <p> These are questions we consider in all projects.</p>
           </Grid>
         </Grid>
-        <Grid container justify="center" className="mb-16">
+        <Grid container justify="center" spacing={2} className="mb-16">
           <Grid
             item
             md="auto"
@@ -133,7 +133,7 @@ const OurWork = () => (
             </p>
           </Grid>
         </Grid>
-        <Grid container justify="center" className="md:mb-16">
+        <Grid container justify="center" spacing={2} className="md:mb-16">
           <Grid
             item
             md="auto"
@@ -193,15 +193,22 @@ const OurWork = () => (
     <Grid container direction="column" justify="flex-start" alignItems="center">
       <Grid item xs className="text-center my-24">
         <h2 className="mb-8">Notable Customers</h2>
-        <Grid container spacing={8} className="">
-          <Grid item className="mx-auto">
-            <TalenomLogo height="48" />
+        <Grid container spacing={4} className="">
+          <Grid item className="mx-auto md:m-0">
+            <Image
+              alt="Talenom logo."
+              filename="talenom-logo.jpg"
+              style={{ height: 64, width: 240 }}
+              imgStyle={{ objectFit: "contain" }}
+              withWebp
+            />
           </Grid>
-          <Grid item className="mx-auto">
+          <Grid item className="mx-auto md:m-0">
             <Image
               alt="Oscar Software logo."
-              filename="oscar-logo.png"
-              style={{ width: 210, height: 64 }}
+              filename="oscar-logo.jpg"
+              style={{ height: 64, width: 240 }}
+              imgStyle={{ objectFit: "contain" }}
               withWebp
             />
           </Grid>
@@ -225,7 +232,6 @@ const BigNumber = styled.div`
   font: 600 144px var(--font-mono);
   line-height: 110px;
   letter-spacing: 0.03em;
-  margin-right: 2rem;
 `
 
 export default OurWork
