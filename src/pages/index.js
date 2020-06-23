@@ -45,7 +45,7 @@ Technology Partnership with Organisations that
         <p className="mb-12">
 Software helps people to do things they were unable to do before. 
   Best apps, websites and back office systems empower consumers, teams and organisations with new tools that bring satisfaction, boost productivity and reach new customer segments or markets. 
-  </p><p>Building those tools our bread and butter. We do it for you. 
+  </p><p>Building those tools is our bread and butter. We would love to do it for you. 
         </p>
         <Button to="/our-work/">See More</Button>
       </Grid>
