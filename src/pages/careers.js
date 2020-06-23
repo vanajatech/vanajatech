@@ -33,7 +33,7 @@ const Careers = () => (
           make sure that everyone in our team feels at home.
         </p>
       </Grid>
-      <Grid item md={6} xs={12} className="order-first md:order-last md:mb-24">
+      <Grid item md={6} xs={12} className="order-first md:order-none md:mb-24">
         <Image
           alt="Our team."
           filename="IMG_4219.jpg"
