@@ -15,12 +15,12 @@ const IndexPage = () => (
 
     <Grid container spacing={4}>
       <Grid item xs>
-        <h1 className="slogan mt-16 md:mt-32 mb-2">
+        <h1 className="slogan mt-16 md:mt-32 mb-6">
           Technology partnership with organisations that
           <br />
           <span className="h1 font-bold">Form The Future.</span>
         </h1>
-        <h2 className="slogan mb-16 md:mb-32">
+        <h2 className="slogan text-2xl mb-16 md:mb-32">
           Vanaja Technologies is a software house in Hämeenlinna, Finland.
         </h2>
       </Grid>
