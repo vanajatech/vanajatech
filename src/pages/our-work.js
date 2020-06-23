@@ -16,7 +16,9 @@ const OurWork = () => (
     <SEO title="Our Work" />
     <PageHeader title="Our Work">
       <h4>
-        We are a young company with a lot of combined skill and experience.
+        We partner with our customers to design, implement and deliver software
+        projects. Mutual trust and sufficient transparency are a must in all we
+        do.
       </h4>
     </PageHeader>
 
@@ -122,6 +124,31 @@ const OurWork = () => (
             zeroMinWidth
             className="text-center md:text-left"
           >
+            <h3>Usability and design</h3>
+            <p>The most important aspect of any software is its usability. </p>
+            <p>
+              How natural is it to use an app? Is the terminology clear and
+              descriptive? Is the onboarding flow encouraging and easy?
+            </p>
+            <p> These are questions we consider in all projects.</p>
+          </Grid>
+        </Grid>
+        <Grid container justify="center" className="mb-16">
+          <Grid
+            item
+            md="auto"
+            xs={12}
+            className="text-center md:text-left mb-4"
+          >
+            <BigNumber>5</BigNumber>
+          </Grid>
+          <Grid
+            item
+            md
+            xs={10}
+            zeroMinWidth
+            className="text-center md:text-left"
+          >
             <h3>JavaScript-Oriented Generalists</h3>
             <p>We use the best technology for each project</p>
             <p>
@@ -153,9 +180,12 @@ const OurWork = () => (
         <p>
           A dev cell may consist of a very senior programmer, a few junior
           programmers and a testing specialist. The senior programmer will guide
-          and lead the project responsibly. Additionally, a project manager can
-          be added to the cell, if there are several dependencies to other teams
-          or if accurate reporting and planning is necessary.
+          and lead the project responsibly.
+        </p>
+        <p>
+          Additionally, a project manager can be added to the cell, if there are
+          several dependencies to other teams or if accurate reporting and
+          planning is necessary.
         </p>
       </Grid>
     </Grid>
