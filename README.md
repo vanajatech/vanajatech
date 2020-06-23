@@ -1,11 +1,13 @@
 <p align="center">
-  <a href="https://www.vanajatech.com">
+  <a href="https://vanaja.tech">
     <img alt="Vanaja Tech logo." src="/src/images/logo.jpg" width="120" />
   </a>
 </p>
 <h1 align="center">
-  Vanaja Technologies' Website
+  Vanaja Tech's Website
 </h1>
+
+_Note: This repository is public on purpose._
 
 ## 🚀 Quick start
 
