@@ -14,7 +14,7 @@ const ContactUs = () => (
   <Layout>
     <SEO title="Contact Us" />
     <PageHeader title="Contact Us">
-      <h4>We are always looking for new opporturnities.</h4>
+      <h4>Please reach out to us and tell us about your matter.</h4>
     </PageHeader>
 
     <Grid container spacing={4} justify="center">
@@ -31,7 +31,7 @@ const ContactUs = () => (
       <Grid item md={4} sm={6} xs={12}>
         <ContactCard className="text-center">
           <Phone />
-          <h4>Give us a call</h4>
+          <h4>Give Matti a call</h4>
           <BoldLink href="tel:+358407537665">+358 40 753 7665</BoldLink>
         </ContactCard>
       </Grid>
