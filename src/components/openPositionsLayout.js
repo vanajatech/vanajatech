@@ -16,7 +16,7 @@ export default class openPositionsLayout extends Component {
         <PageHeader title={markdownRemark.frontmatter.title} />
 
         <Grid container justify="center">
-          <Grid item xs={8}>
+          <Grid item md={8} xs={12}>
             <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
           </Grid>
         </Grid>
