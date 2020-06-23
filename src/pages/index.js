@@ -15,8 +15,8 @@ const IndexPage = () => (
 
     <Grid container spacing={4}>
       <Grid item xs>
-        <h1 className="slogan mt-16 md:mt-32 mb-0">
-          Talk is cheap;
+        <h1 className="slogan mt-16 md:mt-32 mb-2">
+          Ideas are good; planning is important, but
           <br />
           <span className="h1 font-bold">execution is everything.</span>
         </h1>
@@ -78,7 +78,9 @@ const IndexPage = () => (
     <Grid container spacing={4} className="mb-16 md:mb-32">
       <Grid item xs className="text-center">
         <h2 className="h1 m-0">Contact Us</h2>
-        <h4 className="mb-8">We are always looking for new opporturnities.</h4>
+        <h4 className="mb-8">
+          We want to help you build your next ambitious project
+        </h4>
         <Button to="/contact-us/">Contact Us</Button>
       </Grid>
     </Grid>
