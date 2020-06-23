@@ -20,13 +20,30 @@ const OurWork = () => (
       </h4>
     </PageHeader>
 
-    <Grid container direction="column" alignItems="center" spacing={4}>
+    <Grid
+      container
+      direction="column"
+      alignItems="center"
+      justify="center"
+      spacing={4}
+    >
       <Grid item md={6} xs={12}>
-        <Grid container wrap="nowrap" className="mb-16">
-          <Grid item>
+        <Grid container justify="center" className="mb-16">
+          <Grid
+            item
+            md="auto"
+            xs={12}
+            className="text-center md:text-left mb-4"
+          >
             <BigNumber>1</BigNumber>
           </Grid>
-          <Grid item xs zeroMinWidth>
+          <Grid
+            item
+            md
+            xs={10}
+            zeroMinWidth
+            className="text-center md:text-left"
+          >
             <h3>Business Critical Applications</h3>
             <p>
               We promise self-confidently we can implement the most
@@ -36,11 +53,22 @@ const OurWork = () => (
             <p>Tell us what you need; we’ll dare to implement it.</p>
           </Grid>
         </Grid>
-        <Grid container wrap="nowrap" className="mb-16">
-          <Grid item>
+        <Grid container justify="center" className="mb-16">
+          <Grid
+            item
+            md="auto"
+            xs={12}
+            className="text-center md:text-left mb-4"
+          >
             <BigNumber>2</BigNumber>
           </Grid>
-          <Grid item xs zeroMinWidth>
+          <Grid
+            item
+            md
+            xs={10}
+            zeroMinWidth
+            className="text-center md:text-left"
+          >
             <h3>Specialty: Business Services and Finance</h3>
             <p>
               The banking and finance industries are on the brink of a
@@ -49,11 +77,22 @@ const OurWork = () => (
             </p>
           </Grid>
         </Grid>
-        <Grid container wrap="nowrap" className="mb-16">
-          <Grid item>
+        <Grid container justify="center" className="mb-16">
+          <Grid
+            item
+            md="auto"
+            xs={12}
+            className="text-center md:text-left mb-4"
+          >
             <BigNumber>3</BigNumber>
           </Grid>
-          <Grid item xs zeroMinWidth>
+          <Grid
+            item
+            md
+            xs={10}
+            zeroMinWidth
+            className="text-center md:text-left"
+          >
             <h3>Boldly Self-Confident</h3>
             <p>We work efficiently and decisively.</p>
             <p>
@@ -67,11 +106,22 @@ const OurWork = () => (
             </p>
           </Grid>
         </Grid>
-        <Grid container wrap="nowrap" className="mb-16">
-          <Grid item>
+        <Grid container justify="center" className="mb-16">
+          <Grid
+            item
+            md="auto"
+            xs={12}
+            className="text-center md:text-left mb-4"
+          >
             <BigNumber>4</BigNumber>
           </Grid>
-          <Grid item xs zeroMinWidth>
+          <Grid
+            item
+            md
+            xs={10}
+            zeroMinWidth
+            className="text-center md:text-left"
+          >
             <h3>JavaScript-Oriented Generalists</h3>
             <p>We use the best technology for each project</p>
             <p>
@@ -84,12 +134,17 @@ const OurWork = () => (
       </Grid>
     </Grid>
 
-    <Grid container alignItems="center">
-      <Grid item md={3} xs={12}>
+    <Grid container justify="center" alignItems="center">
+      <Grid item md={3} xs={6}>
         <DevCell />
       </Grid>
-      <Grid item md={7} xs={12} className="mt-32 mb-24 md:ml-24">
-        <h1 className="m-0">Buy a Dev Cell</h1>
+      <Grid
+        item
+        md={7}
+        xs={12}
+        className="text-center md:text-left mt-8 md:mt-32 mb-24 md:ml-24"
+      >
+        <h1>Buy a Dev Cell</h1>
         <h4>A Dev Cell of 3-6 people is productive and agile.</h4>
         <p>
           We provide you with a team that is perfectly suited to build your next
@@ -106,17 +161,21 @@ const OurWork = () => (
     </Grid>
 
     <Grid container direction="column" justify="flex-start" alignItems="center">
-      <Grid item xs className="text-center mt-32 mb-24">
-        <h2>Notable Customers</h2>
-        <div className="flex items-center mt-8 py-16">
-          <TalenomLogo height="48" className="pr-16" />
-          <Image
-            alt="Oscar Software logo."
-            filename="oscar-logo.png"
-            style={{ width: 210, height: 64 }}
-            withWebp
-          />
-        </div>
+      <Grid item xs className="text-center my-24">
+        <h2 className="mb-8">Notable Customers</h2>
+        <Grid container spacing={8} className="">
+          <Grid item className="mx-auto">
+            <TalenomLogo height="48" />
+          </Grid>
+          <Grid item className="mx-auto">
+            <Image
+              alt="Oscar Software logo."
+              filename="oscar-logo.png"
+              style={{ width: 210, height: 64 }}
+              withWebp
+            />
+          </Grid>
+        </Grid>
       </Grid>
     </Grid>
 
