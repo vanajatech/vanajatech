@@ -34,20 +34,15 @@ const IndexPage = () => (
           withWebp
         />
       </Grid>
-      <Grid
-        item
-        md={6}
-        xs={12}
-        className="flex flex-col justify-center items-center text-center"
-      >
+      <Grid item md={6} xs={12}>
         <h2>We Do Software</h2>
-        <p className="mb-12">
+        <p>
           Software helps people to do things they were unable to do before. Best
           apps, websites and back office systems empower consumers, teams and
           organisations with new tools that bring satisfaction, boost
           productivity and reach new customer segments or markets.
         </p>
-        <p>
+        <p className="mb-8">
           Building those tools is our bread and butter. We would love to do it
           for you.
         </p>
@@ -79,7 +74,7 @@ const IndexPage = () => (
     </Grid>
 
     <Grid container spacing={4} className="mb-16 md:mb-32">
-      <Grid item xs className="text-center">
+      <Grid item xs className="md:text-center">
         <h2>Contact Us</h2>
         <p>We want to help you build your next ambitious project</p>
         <Button to="/contact-us/">Contact Us</Button>
@@ -95,15 +90,14 @@ const IndexPage = () => (
 )
 
 const Overlay = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-
-  @media (min-width: 768px) {
+  @media (min-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
     background-color: var(--gray-900);
     background-color: rgba(31, 37, 56, 0.35);
     color: var(--gray-100);

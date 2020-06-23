@@ -9,7 +9,6 @@ import Image from "../components/image"
 import ContactForm from "../components/contactForm"
 
 import DevCell from "../images/dev-cell.svg"
-import TalenomLogo from "../images/talenom-logo.svg"
 
 const OurWork = () => (
   <Layout>

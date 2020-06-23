@@ -4,6 +4,7 @@ import styled from "styled-components"
 export const Button = styled(Link)`
   background: var(--primary);
   color: #fff;
+  display: inline-block;
   font-weight: 700;
   line-height: 1rem;
   padding: 0.75rem 1.5rem;
