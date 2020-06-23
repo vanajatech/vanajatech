@@ -71,30 +71,6 @@ const OurWork = () => (
             zeroMinWidth
             className="text-center md:text-left"
           >
-            <h3>Specialty: Business Services and Finance</h3>
-            <p>
-              The banking and finance industries are on the brink of a
-              revolution. Open Banking interfaces (PSD2) are real today. We can
-              guide you through the change and help you catch new opportunities.
-            </p>
-          </Grid>
-        </Grid>
-        <Grid container justify="center" className="mb-16">
-          <Grid
-            item
-            md="auto"
-            xs={12}
-            className="text-center md:text-left mb-4"
-          >
-            <BigNumber>3</BigNumber>
-          </Grid>
-          <Grid
-            item
-            md
-            xs={10}
-            zeroMinWidth
-            className="text-center md:text-left"
-          >
             <h3>Boldly Self-Confident</h3>
             <p>We work efficiently and decisively.</p>
             <p>
@@ -115,7 +91,7 @@ const OurWork = () => (
             xs={12}
             className="text-center md:text-left mb-4"
           >
-            <BigNumber>4</BigNumber>
+            <BigNumber>3</BigNumber>
           </Grid>
           <Grid
             item
@@ -131,6 +107,30 @@ const OurWork = () => (
               descriptive? Is the onboarding flow encouraging and easy?
             </p>
             <p> These are questions we consider in all projects.</p>
+          </Grid>
+        </Grid>
+  <Grid container justify="center" className="mb-16">
+          <Grid
+            item
+            md="auto"
+            xs={12}
+            className="text-center md:text-left mb-4"
+          >
+            <BigNumber>4</BigNumber>
+          </Grid>
+          <Grid
+            item
+            md
+            xs={10}
+            zeroMinWidth
+            className="text-center md:text-left"
+          >
+            <h3>Specialty: Business Services and Finance</h3>
+            <p>
+              The banking and finance industries are on the brink of a
+              revolution. Open Banking interfaces (PSD2) are real today. We can
+              guide you through the change and help you catch new opportunities.
+            </p>
           </Grid>
         </Grid>
         <Grid container justify="center" className="mb-16">

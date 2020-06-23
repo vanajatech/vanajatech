@@ -14,8 +14,7 @@ const Careers = () => (
     <SEO title="Join the Team" />
     <PageHeader title="Join the Team">
       <h4>
-        We are constantly looking for talented individuals to join our
-        evergrowing team.
+        We are constantly looking for talented individuals to join our team.
       </h4>
     </PageHeader>
 
