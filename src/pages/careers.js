@@ -20,7 +20,12 @@ const Careers = () => (
     </PageHeader>
 
     <Grid container spacing={4}>
-      <Grid item xs={6} className="flex flex-col justify-center pr-8 mb-24">
+      <Grid
+        item
+        md={6}
+        xs={12}
+        className="flex flex-col justify-center md:pr-8 mb-24"
+      >
         <h2>About Us</h2>
         <p className="mb-0">
           We’re an innovative and fast growing team of passionate fellows, based
@@ -29,8 +34,7 @@ const Careers = () => (
           make sure that everyone in our team feels at home.
         </p>
       </Grid>
-
-      <Grid item xs={6} className="mb-24">
+      <Grid item md={6} xs={12} className="order-first md:order-last md:mb-24">
         <Image
           alt="Our team."
           filename="IMG_4219.jpg"
@@ -39,7 +43,7 @@ const Careers = () => (
         />
       </Grid>
 
-      <Grid item xs={6}>
+      <Grid item md={6} xs={12}>
         <Image
           alt="Hämeenlinna, the city."
           filename="IMG_0502.jpg"
@@ -48,7 +52,12 @@ const Careers = () => (
         />
       </Grid>
 
-      <Grid item xs={6} className="flex flex-col justify-center pl-16">
+      <Grid
+        item
+        md={6}
+        xs={12}
+        className="flex flex-col justify-center md:pl-16"
+      >
         <h2>
           About <Accent>Hämeenlinna</Accent>
         </h2>
