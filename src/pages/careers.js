@@ -61,9 +61,8 @@ const Careers = () => (
           About <Accent>Hämeenlinna</Accent>
         </h2>
         <p className="mb-0">
-          There are 107 towns in Finland, but none of them equals Hämeenlinna,
-          the only town with an ideal combination of nature and culture,
-          everything nicely and easily within your reach.
+          Hämeenlinna is an old city with an ideal combination of nature and culture,
+          everything nicely and easily within your reach. Its location between the cities of Helsinki and Tampere is very convenient. Local home prices are reasonable. Welcome!
         </p>
       </Grid>
 

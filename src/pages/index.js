@@ -15,7 +15,7 @@ const IndexPage = () => (
     <Grid container spacing={4}>
       <Grid item xs>
         <h1 className="font-normal text-4xl mt-16 md:mt-32 mb-1">
-          Technology partnership with organisations that
+          A tech team for organisations that
           <br />
           <span className="h1 font-bold text-6xl">Form The Future.</span>
         </h1>
