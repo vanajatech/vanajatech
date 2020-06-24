@@ -12,7 +12,7 @@ module.exports = {
         name: `vanaja-technologies`,
         short_name: `vanajatech`,
         start_url: `/`,
-        background_color: `#b40a0a`,
+        background_color: `#ffffff`,
         theme_color: `#b40a0a`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
