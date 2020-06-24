@@ -21,6 +21,8 @@ const Footer = () => (
         </a>
       </SocialIcons>
       <Links>
+        <Link to="/">Home</Link>
+        <Separator>•</Separator>
         <Link to="/our-work/">Our Work</Link>
         <Separator>•</Separator>
         <Link to="/careers/">Careers</Link>
