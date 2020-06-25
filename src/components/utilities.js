@@ -6,6 +6,7 @@ export const BoldLink = styled.a`
   line-height: 1;
   text-align: center;
   color: var(--primary);
+  word-wrap: break-word;
 `
 
 export const UnderlinedLink = styled.a`
