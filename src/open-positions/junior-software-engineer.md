@@ -2,6 +2,8 @@
 slug: "/junior-software-engineer"
 date: "2020-06-15"
 title: "Junior Software Engineer"
+location: "Hämeenlinna"
+type: "Engineering"
 ---
 
 ### Make an impact while growing as a professional

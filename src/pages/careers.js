@@ -3,11 +3,12 @@ import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Grid from "@material-ui/core/Grid"
 
+import Button from "../components/button"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageHeader from "../components/pageHeader"
 import Image from "../components/image"
-import { UnderlinedLink } from "../components/utilities"
+import { BigLink, Separator } from "../components/utilities"
 
 const Careers = () => (
   <Layout>
@@ -18,7 +19,7 @@ const Careers = () => (
       </h4>
     </PageHeader>
 
-    <Grid container spacing={4}>
+    <Grid container spacing={4} justify="center">
       <Grid
         item
         md={6}
@@ -68,27 +69,36 @@ const Careers = () => (
         </p>
       </Grid>
 
-      <Grid item xs={12} className="text-center mt-24 mb-8">
-        <h2 className="mb-4">Open Positions</h2>
+      <Grid item md={7} xs={12} className="mt-24">
+        <h2>Open Positions</h2>
       </Grid>
 
-      <Grid item xs="auto" className="mx-auto">
+      <Grid item md={7} xs={12}>
         <StaticQuery
           query={query}
           render={({ allMarkdownRemark }) =>
             allMarkdownRemark.edges.map(({ node }) => (
-              <h5 className="mb-6">
-                <UnderlinedLink href={`/careers${node.frontmatter.slug}`}>
-                  {node.frontmatter.title}
-                  {/* <ArrowRight className="ml-6" /> */}
-                </UnderlinedLink>
-              </h5>
+              <div className="mb-16">
+                <div className="flex justify-between">
+                  <BigLink href={`/careers${node.frontmatter.slug}`}>
+                    {node.frontmatter.title}
+                  </BigLink>
+                  <Button href={`/careers${node.frontmatter.slug}`}>
+                    Apply
+                  </Button>
+                </div>
+                <div>
+                  <span>{node.frontmatter.location}</span>
+                  <Separator />
+                  <span>{node.frontmatter.type}</span>
+                </div>
+              </div>
             ))
           }
         />
       </Grid>
 
-      <Grid item xs={12} className="text-center my-8">
+      <Grid item md={7} xs={12}>
         <h5>
           {"You can also send us an open application, "}
           <a
@@ -110,9 +120,11 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
-            title
-            date
             slug
+            date
+            title
+            location
+            type
           }
         }
       }

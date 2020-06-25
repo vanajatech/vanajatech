@@ -2,6 +2,8 @@
 slug: "/senior-software-engineer"
 date: "2020-06-15"
 title: "Senior Software Engineer"
+location: "Hämeenlinna"
+type: "Engineering"
 ---
 
 ### BE SIGNIFICANT - HERE YOU CAN MAKE AN IMPACT

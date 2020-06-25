@@ -8,6 +8,7 @@ import {
   // Instagram,
   Linkedin,
 } from "./icons"
+import { Separator } from "./utilities"
 
 const Footer = () => (
   <Grid container className="mt-24">
@@ -22,11 +23,11 @@ const Footer = () => (
       </SocialIcons>
       <Links>
         <Link to="/">Home</Link>
-        <Separator>•</Separator>
+        <Separator />
         <Link to="/our-work/">Our Work</Link>
-        <Separator>•</Separator>
+        <Separator />
         <Link to="/careers/">Careers</Link>
-        <Separator>•</Separator>
+        <Separator />
         <Link to="/contact-us/">Contact Us</Link>
       </Links>
       <Copyright>
@@ -52,12 +53,6 @@ const Links = styled.div`
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-`
-
-const Separator = styled.span`
-  color: var(--primary);
-  font: 600 1.25rem var(--font-mono);
-  margin: 0 1rem;
 `
 
 const Copyright = styled.p`
