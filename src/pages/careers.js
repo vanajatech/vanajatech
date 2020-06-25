@@ -38,7 +38,7 @@ const Careers = () => (
         <Image
           alt="Our team."
           filename="IMG_4219.jpg"
-          className="w-full h-full rounded-sm"
+          className="w-full h-full rounded-lg"
           withWebp
         />
       </Grid>
@@ -47,7 +47,7 @@ const Careers = () => (
         <Image
           alt="Hämeenlinna, the city."
           filename="IMG_0502.jpg"
-          className="w-full h-full rounded-sm"
+          className="w-full h-full rounded-lg"
           withWebp
         />
       </Grid>

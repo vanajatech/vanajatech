@@ -30,7 +30,7 @@ const IndexPage = () => (
         <Image
           alt="Two handsome fellas smiling to the camera."
           filename="IMG_7327.jpg"
-          className="w-full h-full rounded-sm"
+          className="w-full h-full rounded-lg"
           withWebp
         />
       </Grid>
@@ -55,13 +55,13 @@ const IndexPage = () => (
         <Image
           alt="Vanaja Tech team playing football."
           filename="IMG_4219_2.jpg"
-          className="w-full h-full rounded-sm"
+          className="w-full h-full rounded-lg"
           withWebp
           style={{ maxHeight: 720 }}
         />
       </Grid>
       <Grid item xs={12} className="md:absolute md:h-full">
-        <Overlay className="rounded-sm">
+        <Overlay className="rounded-lg">
           <h2>Join the Team</h2>
           <p>
             We’re an innovative and fast growing team of passionate fellows,
