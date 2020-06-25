@@ -37,7 +37,7 @@ const Careers = () => (
         <Image
           alt="Our team."
           filename="IMG_4219.jpg"
-          className="w-full h-full"
+          className="w-full h-full rounded-sm"
           withWebp
         />
       </Grid>
@@ -46,7 +46,7 @@ const Careers = () => (
         <Image
           alt="Hämeenlinna, the city."
           filename="IMG_0502.jpg"
-          className="w-full h-full"
+          className="w-full h-full rounded-sm"
           withWebp
         />
       </Grid>
@@ -61,8 +61,10 @@ const Careers = () => (
           About <Accent>Hämeenlinna</Accent>
         </h2>
         <p className="mb-0">
-          Hämeenlinna is an old city with an ideal combination of nature and culture,
-          everything nicely and easily within your reach. Its location between the cities of Helsinki and Tampere is very convenient. Local home prices are reasonable. Welcome!
+          Hämeenlinna is an old city with an ideal combination of nature and
+          culture, everything nicely and easily within your reach. Its location
+          between the cities of Helsinki and Tampere is very convenient. Local
+          home prices are reasonable. Welcome!
         </p>
       </Grid>
 
