@@ -1,14 +1,9 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
 import Grid from "@material-ui/core/Grid"
 
-import Button from "../components/button"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageHeader from "../components/pageHeader"
-import Image from "../components/image"
-import { BigLink, Separator } from "../components/utilities"
 
 const Aarre = () => (
   <Layout>
