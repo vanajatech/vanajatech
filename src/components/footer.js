@@ -24,6 +24,8 @@ const Footer = () => (
       <Links>
         <Link to="/">Home</Link>
         <Separator />
+        <Link to="/aarre/">Aarre</Link>
+        <Separator />
         <Link to="/our-work/">Our Work</Link>
         <Separator />
         <Link to="/careers/">Careers</Link>

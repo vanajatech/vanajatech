@@ -19,6 +19,9 @@ const Nav = () => (
       className="flex justify-center pt-2 pb-4 whitespace-pre"
     >
       <Link to="/">Home</Link>
+      <Link to="/aarre/" className="ml-6 sm:ml-12">
+        Aarre
+      </Link>
       <Link to="/our-work/" className="ml-6 sm:ml-12">
         Our Work
       </Link>
