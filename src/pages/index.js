@@ -10,7 +10,10 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO
+      keywords={[`vanaja`, `technologies`, `software`, `jobs`, `aarre`]}
+      title="Home"
+    />
 
     <Grid container spacing={4}>
       <Grid item xs className="text-center">

@@ -7,11 +7,21 @@ import PageHeader from "../components/pageHeader"
 
 const Aarre = () => (
   <Layout>
-    <SEO title="Aarre" />
+    <SEO
+      keywords={[
+        `vanaja`,
+        `technologies`,
+        `aarteen`,
+        `metsästys`,
+        `runo`,
+        `hämeenlinna`,
+      ]}
+      title="Aarre"
+    />
     <PageHeader title="Aarre - Treasure" />
 
     <Grid container spacing={4} justify="center" className="mb-12">
-      <Grid item xs="auto">
+      <Grid item md="auto" xs={12}>
         <h3>
           <i>Sattuiko kauan sitten</i>
         </h3>

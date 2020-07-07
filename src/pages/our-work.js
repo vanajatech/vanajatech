@@ -12,7 +12,17 @@ import DevCell from "../images/dev-cell.svg"
 
 const OurWork = () => (
   <Layout>
-    <SEO title="Our Work" />
+    <SEO
+      keywords={[
+        `vanaja`,
+        `technologies`,
+        `software`,
+        `development`,
+        `references`,
+        `FinTech`,
+      ]}
+      title="Our Work"
+    />
     <PageHeader title="Our Work">
       <h4>
         We partner with our customers to design, implement and deliver software
