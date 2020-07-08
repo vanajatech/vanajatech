@@ -18,15 +18,31 @@ const Aarre = () => (
       ]}
       title="Aarre"
     />
-    <PageHeader title="Aarre - Treasure" />
+    <PageHeader title="Aarre - Treasure">
+      <h4>Aarteen löysi Jari Nieminen 7.7.2020</h4>
+    </PageHeader>
 
-    <Grid container spacing={4} justify="center" className="mb-12">
-      <Grid item md="auto" xs={12}>
-        <h3>
-          <i>Sattuiko kauan sitten</i>
-        </h3>
-        <p>
-          <i>
+    <Grid container spacing={4} justify="space-between" className="mb-12">
+      <Grid item md={6} xs={12}>
+        <aside>
+          <h2>Huomaathan</h2>
+          <p>
+            Aarre ei sijaitse yksityisalueella, eikä sitä löytääkseen tarvitse
+            maksaa pääsy- tai muita maksuja.
+            <br />
+            Arkun avaamiseen ei tarvita työkaluja, eikä sitä ole kaivettu maan
+            alle, vaan laskettu vain paikalleen.
+            <br />
+            Aarre sijaitsee Hämeenlinnan alueella, mutta ei valitettavasti
+            esteettömässä paikassa.
+          </p>
+        </aside>
+      </Grid>
+
+      <Grid item md={5} xs={12}>
+        <article className="italic">
+          <h2>Sattuiko kauan sitten</h2>
+          <p>
             Aamupäivän paahteessa
             <br />
             kuulen kavion kapsetta.
@@ -36,11 +52,9 @@ const Aarre = () => (
             Se on Birger Hurjapää!
             <br />
             Aarteita tuli ryöstämään!"
-          </i>
-        </p>
+          </p>
 
-        <p>
-          <i>
+          <p>
             Sieppaan arkkuni puisen <br />
             ja kohti suojaa, linnaa, juoksen.
             <br />
@@ -48,19 +62,15 @@ const Aarre = () => (
             Varjot jää taakse, muurin luo. <br />
             Polku pieni ja kallioinen <br />
             kohta tuo aukeaan avaraan.
-          </i>
-        </p>
+          </p>
 
-        <p>
-          <i>
+          <p>
             Pitikö kultaa kerätä, voi!
             <br />
             Vaivaa ja hikeä taaskin toi!
-          </i>
-        </p>
+          </p>
 
-        <p>
-          <i>
+          <p>
             Mihin aarteen kätkisimme?
             <br />
             Pian, katseen alle, minne!
@@ -72,24 +82,8 @@ const Aarre = () => (
             Sinne sen lasken, ei vihollinen nää,
             <br />
             odottakoon uutta löytäjää!
-          </i>
-        </p>
-      </Grid>
-    </Grid>
-
-    <Grid container spacing={4} justify="center" className="mb-12">
-      <Grid item md={6} xs={12}>
-        <h2>Huomaathan</h2>
-        <p>
-          Aarre ei sijaitse yksityisalueella, eikä sitä löytääkseen tarvitse
-          maksaa pääsy- tai muita maksuja.
-          <br />
-          Arkun avaamiseen ei tarvita työkaluja, eikä sitä ole kaivettu maan
-          alle, vaan laskettu vain paikalleen.
-          <br />
-          Aarre sijaitsee Hämeenlinnan alueella, mutta ei valitettavasti
-          esteettömässä paikassa.
-        </p>
+          </p>
+        </article>
       </Grid>
     </Grid>
 
@@ -102,6 +96,7 @@ const Aarre = () => (
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
+          title="Aarrearkku"
         ></iframe>
       </Grid>
     </Grid>
