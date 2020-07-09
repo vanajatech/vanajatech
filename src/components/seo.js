@@ -56,10 +56,6 @@ const SEO = ({ description, lang, meta, image: metaImage, title }) => {
           content: `website`,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
           name: `twitter:creator`,
           content: site.siteMetadata.author,
         },
@@ -94,6 +90,10 @@ const SEO = ({ description, lang, meta, image: metaImage, title }) => {
                 {
                   name: `twitter:card`,
                   content: `summary_large_image`,
+                },
+                {
+                  name: `twitter:image`,
+                  content: image,
                 },
               ]
             : [
