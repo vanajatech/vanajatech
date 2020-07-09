@@ -8,15 +8,8 @@ import PageHeader from "../components/pageHeader"
 const Aarre = () => (
   <Layout>
     <SEO
-      keywords={[
-        `vanaja`,
-        `technologies`,
-        `aarteen`,
-        `metsästys`,
-        `runo`,
-        `hämeenlinna`,
-      ]}
       title="Aarre"
+      description="Sattuiko kauan sitten. Aamupäivän paahteessa kuulen kavion kapsetta. Viestintuoja pihaan..."
     />
     <PageHeader title="Aarre - Treasure">
       <h4>Aarteen löysi Jari Nieminen 7.7.2020</h4>

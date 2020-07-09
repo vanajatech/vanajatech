@@ -13,14 +13,8 @@ import { BoldLink } from "../components/utilities"
 const ContactUs = () => (
   <Layout>
     <SEO
-      keywords={[
-        `vanaja`,
-        `technologies`,
-        `software`,
-        `development`,
-        `contact`,
-      ]}
       title="Contact Us"
+      description="Please reach out to us and tell us about your matter."
     />
     <PageHeader title="Contact Us">
       <h4>Please reach out to us and tell us about your matter.</h4>

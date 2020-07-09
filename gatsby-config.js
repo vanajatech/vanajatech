@@ -3,7 +3,20 @@ module.exports = {
     title: `Vanaja Tech`,
     description: `Technology partnership with organisations that Form The Future.`,
     author: `@VanajaTech`,
+    keywords: [
+      `vanaja`,
+      `technologies`,
+      `software`,
+      `development`,
+      `jobs`,
+      `careers`,
+      `junior`,
+      `senior`,
+      `engineer`,
+      `hämeenlinna`,
+    ],
     siteUrl: `https://vanaja.tech`,
+    shareImage: `/public/default-share-img.jpg`,
   },
   plugins: [
     {

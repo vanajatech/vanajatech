@@ -13,17 +13,8 @@ import { BigLink, Separator } from "../components/utilities"
 const Careers = () => (
   <Layout>
     <SEO
-      keywords={[
-        `vanaja`,
-        `technologies`,
-        `software`,
-        `engineer`,
-        `career`,
-        `jobs`,
-        `junior`,
-        `senior`,
-      ]}
       title="Join the Team"
+      description="We’re an innovative and fast growing team, and constantly looking for talented individuals to join our team."
     />
     <PageHeader title="Join the Team">
       <h4>
