@@ -16,7 +16,7 @@ module.exports = {
       `hämeenlinna`,
     ],
     siteUrl: `https://vanaja.tech`,
-    shareImage: `/public/default-share-img.jpg`,
+    shareImage: `/default-share-img.jpg`,
   },
   plugins: [
     {
