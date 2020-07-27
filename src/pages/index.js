@@ -30,8 +30,8 @@ const IndexPage = () => (
     <Grid container spacing={4} alignItems="center" className="mb-16 md:mb-32">
       <Grid item md={6} xs={12}>
         <Image
-          alt="Two handsome fellas smiling to the camera."
-          filename="IMG_7327.jpg"
+          alt="Group photo."
+          filename="IMG_8033.jpg"
           className="w-full h-full rounded-lg"
           withWebp
         />

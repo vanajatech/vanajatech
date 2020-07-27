@@ -4,16 +4,15 @@ import Grid from "@material-ui/core/Grid"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageHeader from "../components/pageHeader"
+import { BoldLink } from "../components/utilities"
 
 const Aarre = () => (
   <Layout>
     <SEO
-      title="Aarre"
-      description="Sattuiko kauan sitten. Aamupäivän paahteessa kuulen kavion kapsetta. Viestintuoja pihaan..."
+      title="Toinen Aarre"
+      description="Mies syntyi, kasvoi vahvaksi. Elämänsä oli kova, raskaskin. Vaan tuskin häntä muistetaan - vain hänenlaisiaan."
     />
-    <PageHeader title="Aarre - Treasure">
-      <h4>Aarteen löysi Jari Nieminen 7.7.2020</h4>
-    </PageHeader>
+    <PageHeader title="Toinen Aarre" />
 
     <Grid container spacing={4} justify="space-between" className="mb-12">
       <Grid item md={6} xs={12}>
@@ -29,52 +28,82 @@ const Aarre = () => (
             Aarre sijaitsee Hämeenlinnan alueella, mutta ei valitettavasti
             esteettömässä paikassa.
           </p>
+          <p>
+            <BoldLink href="/ensimmainen-aarre/">
+              Ensimmäinen aarre löytyi 7.7.2020
+            </BoldLink>
+          </p>
         </aside>
       </Grid>
 
       <Grid item md={5} xs={12}>
         <article className="italic">
-          <h2>Sattuiko kauan sitten</h2>
+          <h2>Kohtaloita</h2>
           <p>
-            Aamupäivän paahteessa
+            Mies syntyi, kasvoi vahvaksi.
             <br />
-            kuulen kavion kapsetta.
+            Elämänsä oli kova, raskaskin.
             <br />
-            Viestintuoja pihaan laukkaa. <br />
-            "Savu nousee tuolta kaukaa! <br />
-            Se on Birger Hurjapää!
-            <br />
-            Aarteita tuli ryöstämään!"
+            Vaan tuskin häntä muistetaan
+            <br />- vain hänenlaisiaan.
           </p>
-
           <p>
-            Sieppaan arkkuni puisen <br />
-            ja kohti suojaa, linnaa, juoksen.
+            Tapasi naisen, rakastui kai.
             <br />
-            Kivinen portti jo turvan tuo. <br />
-            Varjot jää taakse, muurin luo. <br />
-            Polku pieni ja kallioinen <br />
-            kohta tuo aukeaan avaraan.
+            Vaimon kohtalo suruinen, voi!
+            <br />
+            Vaan tuskin häntä muistetaan
+            <br />- vain hänenlaisiaan.
           </p>
-
           <p>
-            Pitikö kultaa kerätä, voi!
+            Mut kyllä silti täällä lie
             <br />
-            Vaivaa ja hikeä taaskin toi!
+            Hämeenlinnassa kulkutie,
+            <br />
+            heidän nimiänsä muistuttaa.
+            <br />
+            Sattuma sen niin kai saa.
           </p>
-
           <p>
-            Mihin aarteen kätkisimme?
+            Sen korkealta kohdalta
             <br />
-            Pian, katseen alle, minne!
+            kun alas katselee, voi
             <br />
-            Kaksikymmentä askelta oikealle,
+            polun nähdä viihtyisän.
             <br />
-            katson alas, kuusen alle.
+            Sitä lähde kulkemaan.
+          </p>
+          <p>
+            Elä kertaakaan käänny oikeaan.
             <br />
-            Sinne sen lasken, ei vihollinen nää,
+            Vaimonsa elämän mukaan:
             <br />
-            odottakoon uutta löytäjää!
+            jokaista elinpäiväänsä kohti
+            <br />
+            reilut kolme tuumaa kulje.
+          </p>
+          <p>
+            Kun maisema matkan pysäyttää,
+            <br />
+            tartu hetkeen, nauti hetki tää!
+            <br />
+            Nyt jälkeen muutaman askeleen
+            <br />
+            voit kääntää katseesi oikeaan.
+          </p>
+          <p>
+            Jos tarkkaan katsot, näet puun:
+            <br />
+            Se tummana muista erottuu.
+            <br />
+            Aarre nukkuu kätkössä sen.
+            <br />
+            Mene, ja katso alle lehtien.
+          </p>
+          <p>
+            Kohtalo sinulle aarteita suo.
+            <br />
+            Olkoon onneksi löytö tuo!
           </p>
         </article>
       </Grid>
