@@ -2,6 +2,7 @@ import React from "react"
 import Grid from "@material-ui/core/Grid"
 
 import Layout from "../components/layout"
+import Image from "../components/image"
 import SEO from "../components/seo"
 import PageHeader from "../components/pageHeader"
 import { BoldLink } from "../components/utilities"
@@ -15,27 +16,6 @@ const Aarre = () => (
     <PageHeader title="Toinen Aarre" />
 
     <Grid container spacing={4} justify="space-between" className="mb-12">
-      <Grid item md={6} xs={12}>
-        <aside>
-          <h2>Huomaathan</h2>
-          <p>
-            Aarre ei sijaitse yksityisalueella, eikä sitä löytääkseen tarvitse
-            maksaa pääsy- tai muita maksuja.
-            <br />
-            Arkun avaamiseen ei tarvita työkaluja, eikä sitä ole kaivettu maan
-            alle, vaan laskettu vain paikalleen.
-            <br />
-            Aarre sijaitsee Hämeenlinnan alueella, mutta ei valitettavasti
-            esteettömässä paikassa.
-          </p>
-          <p>
-            <BoldLink href="/ensimmainen-aarre/">
-              Ensimmäinen aarre löytyi 7.7.2020
-            </BoldLink>
-          </p>
-        </aside>
-      </Grid>
-
       <Grid item md={5} xs={12}>
         <article className="italic">
           <h2>Kohtaloita</h2>
@@ -107,6 +87,32 @@ const Aarre = () => (
           </p>
         </article>
       </Grid>
+      <Grid item md={6} xs={12}>
+        <aside>
+          <Image
+            alt="Aarrearkku."
+            filename="IMG_2352.jpg"
+            className="w-full h-full rounded-lg mb-8"
+            withWebp
+          />
+          <h2>Huomaathan</h2>
+          <p>
+            Aarre ei sijaitse yksityisalueella, eikä sitä löytääkseen tarvitse
+            maksaa pääsy- tai muita maksuja.
+            <br />
+            Arkun avaamiseen ei tarvita työkaluja, eikä sitä ole kaivettu maan
+            alle, vaan laskettu vain paikalleen.
+            <br />
+            Aarre sijaitsee Hämeenlinnan alueella, mutta ei valitettavasti
+            esteettömässä paikassa.
+          </p>
+          <p>
+            <BoldLink href="/ensimmainen-aarre/">
+              Ensimmäinen aarre löytyi 7.7.2020
+            </BoldLink>
+          </p>
+        </aside>
+      </Grid>
     </Grid>
 
     <Grid container spacing={4} justify="center">
@@ -114,7 +120,7 @@ const Aarre = () => (
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube-nocookie.com/embed/SsPvE4Uby-E"
+          src="https://www.youtube-nocookie.com/embed/55WoX7H5ll0"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
