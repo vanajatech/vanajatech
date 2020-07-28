@@ -91,7 +91,7 @@ const Aarre = () => (
         <aside>
           <Image
             alt="Aarrearkku."
-            filename="IMG_2352.jpg"
+            filename="IMG_6771.jpg"
             className="w-full h-full rounded-lg mb-8"
             withWebp
           />
