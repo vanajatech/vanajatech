@@ -22,15 +22,13 @@ const Footer = () => (
         </a>
       </SocialIcons>
       <Links>
-        <Link to="/">Home</Link>
+        <Link to="/">Aarre</Link>
         <Separator />
-        <Link to="/aarre/">Aarre</Link>
+        <a href="https://www.talenom.fi/">Our Work</a>
         <Separator />
-        <Link to="/our-work/">Our Work</Link>
+        <a href="https://rekry.talenom.fi/">Careers</a>
         <Separator />
-        <Link to="/careers/">Careers</Link>
-        <Separator />
-        <Link to="/contact-us/">Contact Us</Link>
+        <a href="https://www.talenom.fi/">Contact Us</a>
       </Links>
       <Copyright>
         © Vanaja Technologies Ltd. since 2020. All rights reserved.
