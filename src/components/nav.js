@@ -23,7 +23,9 @@ const Nav = () => (
       className="flex justify-center pt-2 pb-4 whitespace-pre"
     >
       <Link to="/">Aarre</Link>
-      <a href="https://www.talenom.fi/" className="ml-6 sm:ml-12">
+
+  {false && (<>
+  <a href="https://www.talenom.fi/" className="ml-6 sm:ml-12">
         Our Work
       </a>
       <a href="https://rekry.talenom.fi/" className="ml-6 sm:ml-12">
@@ -40,6 +42,8 @@ const Nav = () => (
       <a href="https://www.talenom.fi/" className="ml-6 sm:ml-12">
         Contact Us
       </a>
+  </>
+  )}
     </Grid>
   </Grid>
 )
